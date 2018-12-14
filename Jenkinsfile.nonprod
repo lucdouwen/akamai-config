@@ -7,7 +7,7 @@ def img_group_name= 'lucdouwen'
 pipeline {
     agent any
     environment {
-    	PATH = "../pipeline-scripts:$PATH"
+    	PATH = "/usr/local/bin:$PATH"
     }
     stages {
        stage('Initialize pipeline') {

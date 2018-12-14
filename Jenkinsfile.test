@@ -1,0 +1,19 @@
+def img_tag_ori = '$BUILD_NUMBER'
+def img_tag = 'latest'
+def img_name = 'akamai-cli-pipeline'
+def nexus = 'nexus.ravago.com:5000'
+def img_group_name= 'luc'
+
+pipeline {
+    agent { label 'multi-stage-docker' }
+    environment {
+    	PATH = "../pipeline-scripts:$PATH"
+    }
+    stages {
+       stage('Initialize pipeline') {
+            steps {
+                sh "echo hallo"
+            }
+        }
+    }
+}

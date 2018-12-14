@@ -5,7 +5,7 @@ def nexus = 'nexus.ravago.com:5000'
 def img_group_name= 'luc'
 
 pipeline {
-
+    agent any
     environment {
     	PATH = "../pipeline-scripts:$PATH"
     }

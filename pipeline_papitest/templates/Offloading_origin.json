@@ -1,0 +1,212 @@
+{
+    "name": "Offloading origin",
+    "children": [
+        {
+            "name": "Static Content",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "caching",
+                    "options": {
+                        "behavior": "MAX_AGE",
+                        "mustRevalidate": false,
+                        "ttl": "1d"
+                    }
+                },
+                {
+                    "name": "prefetch",
+                    "options": {
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "prefetchable",
+                    "options": {
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "prefreshCache",
+                    "options": {
+                        "enabled": true,
+                        "prefreshval": 95
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "fileExtension",
+                    "options": {
+                        "matchCaseSensitive": false,
+                        "matchOperator": "IS_ONE_OF",
+                        "values": [
+                            "aif",
+                            "aiff",
+                            "au",
+                            "avi",
+                            "bin",
+                            "bmp",
+                            "cab",
+                            "carb",
+                            "cct",
+                            "cdf",
+                            "class",
+                            "css",
+                            "doc",
+                            "dcr",
+                            "dtd",
+                            "exe",
+                            "flv",
+                            "gcf",
+                            "gff",
+                            "gif",
+                            "grv",
+                            "hdml",
+                            "hqx",
+                            "ico",
+                            "ini",
+                            "jpeg",
+                            "jpg",
+                            "js",
+                            "mov",
+                            "mp3",
+                            "nc",
+                            "pct",
+                            "pdf",
+                            "png",
+                            "ppc",
+                            "pws",
+                            "swa",
+                            "swf",
+                            "txt",
+                            "vbs",
+                            "w32",
+                            "wav",
+                            "wbmp",
+                            "wml",
+                            "wmlc",
+                            "wmls",
+                            "wmlsc",
+                            "xsd",
+                            "zip",
+                            "pict",
+                            "tif",
+                            "tiff",
+                            "mid",
+                            "midi",
+                            "ttf",
+                            "eot",
+                            "woff",
+                            "woff2",
+                            "otf",
+                            "svg",
+                            "svgz",
+                            "webp",
+                            "jxr",
+                            "jar",
+                            "jp2"
+                        ]
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Dynamic Content",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "downstreamCache",
+                    "options": {
+                        "behavior": "TUNNEL_ORIGIN"
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "cacheability",
+                    "options": {
+                        "matchOperator": "IS_NOT",
+                        "value": "CACHEABLE"
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Cookie bypass cache",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "caching",
+                    "options": {
+                        "behavior": "BYPASS_CACHE"
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "requestCookie",
+                    "options": {
+                        "cookieName": "xxxx",
+                        "matchOperator": "EXISTS",
+                        "matchWildcardName": false,
+                        "matchCaseSensitiveName": true
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Admin bypass cache",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "caching",
+                    "options": {
+                        "behavior": "BYPASS_CACHE"
+                    }
+                },
+                {
+                    "name": "downstreamCache",
+                    "options": {
+                        "behavior": "BUST"
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "hostname",
+                    "options": {
+                        "matchOperator": "IS_ONE_OF",
+                        "values": [
+                            "/admin*",
+                            "/admin/*"
+                        ]
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "CACHE_CONTROL_AND_EXPIRES",
+                "mustRevalidate": false,
+                "defaultTtl": "0m",
+                "honorPrivateEnabled": true,
+                "honorMustrevalidateEnabled": false
+            }
+        },
+        {
+            "name": "downstreamCache",
+            "options": {
+                "behavior": "TUNNEL_ORIGIN"
+            }
+        }
+    ],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

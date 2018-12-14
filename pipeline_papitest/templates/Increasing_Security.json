@@ -1,0 +1,68 @@
+{
+    "name": "Increasing Security",
+    "children": [
+        {
+            "name": "Allowed HTTP Methods",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "allowPost",
+                    "options": {
+                        "enabled": true,
+                        "allowWithoutContentLength": false
+                    }
+                },
+                {
+                    "name": "allowDelete",
+                    "options": {
+                        "enabled": true,
+                        "allowBody": false
+                    }
+                },
+                {
+                    "name": "allowPut",
+                    "options": {
+                        "enabled": true
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "HTTP headers",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "modifyOutgoingResponseHeader",
+                    "options": {
+                        "action": "DELETE",
+                        "standardDeleteHeaderName": "OTHER",
+                        "customHeaderName": "Server"
+                    }
+                },
+                {
+                    "name": "modifyOutgoingResponseHeader",
+                    "options": {
+                        "action": "DELETE",
+                        "standardDeleteHeaderName": "OTHER",
+                        "customHeaderName": "X-Powered-By"
+                    }
+                },
+                {
+                    "name": "modifyOutgoingResponseHeader",
+                    "options": {
+                        "action": "DELETE",
+                        "standardDeleteHeaderName": "OTHER",
+                        "customHeaderName": "Forwarded"
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

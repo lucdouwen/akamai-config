@@ -1,0 +1,47 @@
+{
+    "rules": {
+        "name": "default",
+        "children": [
+            "#include:Origin_servers.json",
+            "#include:Increasing_insights.json",
+            "#include:Offloading_origin.json",
+            "#include:Accelerating_delivery.json",
+            "#include:Increasing_Security.json",
+            "#include:Minimizing_Payload.json",
+            "#include:Adding_Logic.json"
+        ],
+        "behaviors": [
+            {
+                "name": "origin",
+                "options": {
+                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                    "compress": true,
+                    "enableTrueClientIp": true,
+                    "forwardHostHeader": "REQUEST_HOST_HEADER",
+                    "httpPort": 80,
+                    "originType": "CUSTOMER",
+                    "hostname": "${env.originHostname}",
+                    "originCertificate": "",
+                    "verificationMode": "PLATFORM_SETTINGS",
+                    "ports": "",
+                    "httpsPort": 443,
+                    "originSni": true,
+                    "trueClientIpHeader": "True-Client-IP",
+                    "trueClientIpClientSetting": false
+                }
+            },
+            {
+                "name": "cpCode",
+                "options": {
+                    "value": {
+                        "id": "${env.cpCode}"
+                    }
+                }
+            }
+        ],
+        "options": {
+            "is_secure": true
+        },
+        "variables": []
+    }
+}

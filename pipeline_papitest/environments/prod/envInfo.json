@@ -1,0 +1,18 @@
+{
+    "name": "prod",
+    "propertyName": "prod.pipeline_papitest",
+    "groupId": 119284,
+    "isSecure": true,
+    "propertyId": 504464,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "nf6wdpn2ts5apnz4",
+        "updatedDate": "2018-12-04T11:39:29Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "1b7dcc426d896d4d9628b66601ac306f64f78cf3",
+        "productId": "prd_Site_Accel",
+        "ruleFormat": "v2018-09-12"
+    },
+    "suggestedRuleFormat": "v2018-09-12"
+}

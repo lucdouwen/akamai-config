@@ -1,0 +1,58 @@
+{
+    "name": "Adding Logic",
+    "children": [
+        {
+            "name": "Remove Vary Header",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "removeVary",
+                    "options": {
+                        "enabled": true
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all",
+            "comments": "Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate."
+        },
+        {
+            "name": "Enforce https",
+            "children": [
+                {
+                    "name": "Redirect to HTTPS",
+                    "children": [],
+                    "behaviors": [
+                        {
+                            "name": "redirect",
+                            "options": {
+                                "queryString": "APPEND",
+                                "responseCode": 301,
+                                "destinationHostname": "SAME_AS_REQUEST",
+                                "destinationPath": "SAME_AS_REQUEST",
+                                "destinationProtocol": "HTTPS",
+                                "mobileDefaultChoice": "DEFAULT"
+                            }
+                        }
+                    ],
+                    "criteria": [
+                        {
+                            "name": "requestProtocol",
+                            "options": {
+                                "value": "HTTP"
+                            }
+                        }
+                    ],
+                    "criteriaMustSatisfy": "all",
+                    "comments": "Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently). You may change the response code to 302 if needed."
+                }
+            ],
+            "behaviors": [],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

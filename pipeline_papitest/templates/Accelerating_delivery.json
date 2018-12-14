@@ -1,0 +1,72 @@
+{
+    "name": "Accelerating delivery",
+    "children": [
+        {
+            "name": "Enable HTTP2",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "http2",
+                    "options": {
+                        "enabled": ""
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "bucket",
+                    "options": {
+                        "percentage": 100
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "DNS Async Refresh",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "dnsAsyncRefresh",
+                    "options": {
+                        "enabled": true,
+                        "timeout": "2h"
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Chunked Transfer Encoding",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "allowTransferEncoding",
+                    "options": {
+                        "enabled": true
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Tiered distribution",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "tieredDistribution",
+                    "options": {
+                        "enabled": true
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

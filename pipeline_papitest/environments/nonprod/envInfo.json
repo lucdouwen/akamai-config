@@ -1,0 +1,18 @@
+{
+    "name": "nonprod",
+    "propertyName": "nonprod.pipeline_papitest",
+    "groupId": 119284,
+    "isSecure": true,
+    "propertyId": 504463,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "nf6wdpn2ts5apnz4",
+        "updatedDate": "2018-12-04T11:39:25Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "4268e1bbf47f2a8340a599b09cdca6a631f9fa32",
+        "productId": "prd_Site_Accel",
+        "ruleFormat": "v2018-09-12"
+    },
+    "suggestedRuleFormat": "v2018-09-12"
+}

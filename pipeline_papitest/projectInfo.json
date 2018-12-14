@@ -1,0 +1,17 @@
+{
+    "productId": "prd_Site_Accel",
+    "contractId": "ctr_P-2D0UA15",
+    "groupIds": [
+        119284
+    ],
+    "environments": [
+        "nonprod",
+        "prod"
+    ],
+    "version": "0.3.0",
+    "isSecure": true,
+    "edgeGridConfig": {
+        "section": "papi"
+    },
+    "name": "pipeline_papitest"
+}

@@ -1,0 +1,101 @@
+{
+    "name": "Increasing insights",
+    "children": [
+        {
+            "name": "CP Codes",
+            "children": [
+                {
+                    "name": "DEV",
+                    "children": [],
+                    "behaviors": [
+                        {
+                            "name": "cpCode",
+                            "options": {
+                                "value": {
+                                    "id": "${env.cpCode}"
+                                }
+                            }
+                        }
+                    ],
+                    "criteria": [
+                        {
+                            "name": "hostname",
+                            "options": {
+                                "matchOperator": "IS_ONE_OF",
+                                "values": [
+                                    "overheid.dev-vlaanderen.be"
+                                ]
+                            }
+                        }
+                    ],
+                    "criteriaMustSatisfy": "all"
+                },
+                {
+                    "name": "UAT",
+                    "children": [],
+                    "behaviors": [
+                        {
+                            "name": "cpCode",
+                            "options": {
+                                "value": {
+                                    "id": "${env.cpCode}"
+                                }
+                            }
+                        }
+                    ],
+                    "criteria": [
+                        {
+                            "name": "hostname",
+                            "options": {
+                                "matchOperator": "IS_ONE_OF",
+                                "values": [
+                                    "overheid.uat-vlaanderen.be"
+                                ]
+                            }
+                        }
+                    ],
+                    "criteriaMustSatisfy": "all"
+                }
+            ],
+            "behaviors": [],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Log Delivery",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "report",
+                    "options": {
+                        "logHost": true,
+                        "logReferer": true,
+                        "logUserAgent": true,
+                        "logAcceptLanguage": true,
+                        "logCookies": "OFF",
+                        "logCustomLogField": false
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Real User Monitoring",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "realUserMonitoring",
+                    "options": {
+                        "enabled": false
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

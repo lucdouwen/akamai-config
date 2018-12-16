@@ -1,4 +1,4 @@
-FROM nexus.ravago.com:5000/luc/akamai-cli:latest
+FROM lucdouwen/akamai-cli:latest
 COPY . .
 ENTRYPOINT ["/usr/local/bin/akamai"]
 # to parameterize

@@ -3,88 +3,6 @@
         "name": "default",
         "children": [
             {
-                "name": "Origin servers",
-                "children": [
-                    {
-                        "name": "DEV",
-                        "children": [],
-                        "behaviors": [
-                            {
-                                "name": "origin",
-                                "options": {
-                                    "originType": "CUSTOMER",
-                                    "hostname": "origin-nonprod.pipeline_papitest",
-                                    "forwardHostHeader": "REQUEST_HOST_HEADER",
-                                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
-                                    "compress": true,
-                                    "enableTrueClientIp": true,
-                                    "originCertificate": "",
-                                    "verificationMode": "PLATFORM_SETTINGS",
-                                    "ports": "",
-                                    "httpPort": 80,
-                                    "httpsPort": 443,
-                                    "originSni": true,
-                                    "trueClientIpHeader": "True-Client-IP",
-                                    "trueClientIpClientSetting": false
-                                }
-                            }
-                        ],
-                        "criteria": [
-                            {
-                                "name": "hostname",
-                                "options": {
-                                    "matchOperator": "IS_ONE_OF",
-                                    "values": [
-                                        "vls.dev-vlaanderen.be"
-                                    ]
-                                }
-                            }
-                        ],
-                        "criteriaMustSatisfy": "all"
-                    },
-                    {
-                        "name": "UAT",
-                        "children": [],
-                        "behaviors": [
-                            {
-                                "name": "origin",
-                                "options": {
-                                    "originType": "CUSTOMER",
-                                    "hostname": "origin-nonprod.pipeline_papitest",
-                                    "forwardHostHeader": "REQUEST_HOST_HEADER",
-                                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
-                                    "compress": true,
-                                    "enableTrueClientIp": true,
-                                    "originCertificate": "",
-                                    "verificationMode": "PLATFORM_SETTINGS",
-                                    "ports": "",
-                                    "httpPort": 80,
-                                    "httpsPort": 443,
-                                    "originSni": false,
-                                    "trueClientIpHeader": "True-Client-IP",
-                                    "trueClientIpClientSetting": false
-                                }
-                            }
-                        ],
-                        "criteria": [
-                            {
-                                "name": "hostname",
-                                "options": {
-                                    "matchOperator": "IS_ONE_OF",
-                                    "values": [
-                                        "vls.uat-vlaanderen.be"
-                                    ]
-                                }
-                            }
-                        ],
-                        "criteriaMustSatisfy": "all"
-                    }
-                ],
-                "behaviors": [],
-                "criteria": [],
-                "criteriaMustSatisfy": "all"
-            },
-            {
                 "name": "Increasing insights",
                 "children": [
                     {
@@ -660,7 +578,7 @@
                     "forwardHostHeader": "REQUEST_HOST_HEADER",
                     "httpPort": 80,
                     "originType": "CUSTOMER",
-                    "hostname": "origin-nonprod.pipeline_papitest",
+                    "hostname": "origin-nonprod.pipeline_papitest.vlaanderen.be",
                     "originCertificate": "",
                     "verificationMode": "PLATFORM_SETTINGS",
                     "ports": "",

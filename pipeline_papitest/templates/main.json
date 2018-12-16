@@ -2,7 +2,7 @@
     "rules": {
         "name": "default",
         "children": [
-            "#include:Origin_servers.json",
+
             "#include:Increasing_insights.json",
             "#include:Offloading_origin.json",
             "#include:Accelerating_delivery.json",

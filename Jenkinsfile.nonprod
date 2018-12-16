@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Build Akamai-cli container') {
             steps {
-                sh("/usr/local/bin/docker build -t ${img_group_name}/akam ${img_name}:${img_tag} ")
+                sh("/usr/local/bin/docker build -t ${img_group_name}/${img_name}:${img_tag} .")
             }
         }
         stage('Run Akamai-cli container') {

@@ -1,3 +1,4 @@
+# see Dockerfile_akamaili_corrected
 FROM lucdouwen/akamai-cli:latest
 COPY . .
 ENTRYPOINT ["/usr/local/bin/akamai"]

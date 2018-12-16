@@ -14,5 +14,63 @@
         "productId": "prd_Site_Accel",
         "ruleFormat": "v2018-09-12"
     },
-    "suggestedRuleFormat": "v2018-09-12"
+    "suggestedRuleFormat": "v2018-09-12",
+    "environmentHash": "d335a24a024680937fdda9e7cf58fa7334a0e5b6aff462aec164c5480ec154c1",
+    "ruleTreeHash": "ae8675f5602fcf9e081e90e45a124fd08d3503a21ad278e5c67415a41ff4a2e5",
+    "lastValidatedHash": "d335a24a024680937fdda9e7cf58fa7334a0e5b6aff462aec164c5480ec154c1",
+    "lastSaveWarnings": [
+        {
+            "type": "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.http2_hostname_conflict_message",
+            "errorLocation": {
+                "template": "templates/Accelerating_delivery.json",
+                "variables": [],
+                "location": "children/0/behaviors/0",
+                "value": {
+                    "name": "http2",
+                    "options": {
+                        "enabled": ""
+                    }
+                }
+            },
+            "detail": "Warning: If your HTTP/2 rule contains no hostname match criteria, a parent or higher sibling ruleâs hostname match criteria apply to this rule. Best practice is to do one of the following:<br /> 1. Add a hostname match to the HTTP/2 rule. <br /> 2. Move the HTTP/2 behavior to the default rule to apply to all property hostnames."
+        }
+    ],
+    "lastSaveErrors": [
+        {
+            "type": "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_or_ip",
+            "errorLocation": {
+                "template": "templates/main.json",
+                "variables": [
+                    "environments/nonprod/variables.json"
+                ],
+                "location": "rules/behaviors/0/options/hostname",
+                "value": "origin-nonprod.pipeline_papitest"
+            },
+            "detail": "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+        },
+        {
+            "type": "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_or_ip",
+            "errorLocation": {
+                "template": "templates/Origin_servers.json",
+                "variables": [
+                    "environments/nonprod/variables.json"
+                ],
+                "location": "children/0/behaviors/0/options/hostname",
+                "value": "origin-nonprod.pipeline_papitest"
+            },
+            "detail": "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+        },
+        {
+            "type": "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_or_ip",
+            "errorLocation": {
+                "template": "templates/Origin_servers.json",
+                "variables": [
+                    "environments/nonprod/variables.json"
+                ],
+                "location": "children/1/behaviors/0/options/hostname",
+                "value": "origin-nonprod.pipeline_papitest"
+            },
+            "detail": "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+        }
+    ]
 }

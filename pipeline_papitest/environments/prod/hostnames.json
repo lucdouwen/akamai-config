@@ -1,6 +1,6 @@
 [
     {
-        "cnameFrom": "prod.pipeline_papitest",
+        "cnameFrom": "prod.pipeline_papitest.be",
         "cnameTo": "prod.pipeline_papitest.edgekey.net",
         "cnameType": "EDGE_HOSTNAME",
         "edgeHostnameId": null

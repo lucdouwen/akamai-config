@@ -1,0 +1,687 @@
+{
+    "rules": {
+        "name": "default",
+        "children": [
+            {
+                "name": "Origin servers",
+                "children": [
+                    {
+                        "name": "DEV",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "origin",
+                                "options": {
+                                    "originType": "CUSTOMER",
+                                    "hostname": "origin-nonprod.pipeline_papitest",
+                                    "forwardHostHeader": "REQUEST_HOST_HEADER",
+                                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                                    "compress": true,
+                                    "enableTrueClientIp": true,
+                                    "originCertificate": "",
+                                    "verificationMode": "PLATFORM_SETTINGS",
+                                    "ports": "",
+                                    "httpPort": 80,
+                                    "httpsPort": 443,
+                                    "originSni": true,
+                                    "trueClientIpHeader": "True-Client-IP",
+                                    "trueClientIpClientSetting": false
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "hostname",
+                                "options": {
+                                    "matchOperator": "IS_ONE_OF",
+                                    "values": [
+                                        "vls.dev-vlaanderen.be"
+                                    ]
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "UAT",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "origin",
+                                "options": {
+                                    "originType": "CUSTOMER",
+                                    "hostname": "origin-nonprod.pipeline_papitest",
+                                    "forwardHostHeader": "REQUEST_HOST_HEADER",
+                                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                                    "compress": true,
+                                    "enableTrueClientIp": true,
+                                    "originCertificate": "",
+                                    "verificationMode": "PLATFORM_SETTINGS",
+                                    "ports": "",
+                                    "httpPort": 80,
+                                    "httpsPort": 443,
+                                    "originSni": false,
+                                    "trueClientIpHeader": "True-Client-IP",
+                                    "trueClientIpClientSetting": false
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "hostname",
+                                "options": {
+                                    "matchOperator": "IS_ONE_OF",
+                                    "values": [
+                                        "vls.uat-vlaanderen.be"
+                                    ]
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all"
+                    }
+                ],
+                "behaviors": [],
+                "criteria": [],
+                "criteriaMustSatisfy": "all"
+            },
+            {
+                "name": "Increasing insights",
+                "children": [
+                    {
+                        "name": "CP Codes",
+                        "children": [
+                            {
+                                "name": "DEV",
+                                "children": [],
+                                "behaviors": [
+                                    {
+                                        "name": "cpCode",
+                                        "options": {
+                                            "value": {
+                                                "id": 724490
+                                            }
+                                        }
+                                    }
+                                ],
+                                "criteria": [
+                                    {
+                                        "name": "hostname",
+                                        "options": {
+                                            "matchOperator": "IS_ONE_OF",
+                                            "values": [
+                                                "overheid.dev-vlaanderen.be"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteriaMustSatisfy": "all"
+                            },
+                            {
+                                "name": "UAT",
+                                "children": [],
+                                "behaviors": [
+                                    {
+                                        "name": "cpCode",
+                                        "options": {
+                                            "value": {
+                                                "id": 724490
+                                            }
+                                        }
+                                    }
+                                ],
+                                "criteria": [
+                                    {
+                                        "name": "hostname",
+                                        "options": {
+                                            "matchOperator": "IS_ONE_OF",
+                                            "values": [
+                                                "overheid.uat-vlaanderen.be"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "criteriaMustSatisfy": "all"
+                            }
+                        ],
+                        "behaviors": [],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "Log Delivery",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "report",
+                                "options": {
+                                    "logHost": true,
+                                    "logReferer": true,
+                                    "logUserAgent": true,
+                                    "logAcceptLanguage": true,
+                                    "logCookies": "OFF",
+                                    "logCustomLogField": false
+                                }
+                            }
+                        ],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "Real User Monitoring",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "realUserMonitoring",
+                                "options": {
+                                    "enabled": false
+                                }
+                            }
+                        ],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all"
+                    }
+                ],
+                "behaviors": [],
+                "criteria": [],
+                "criteriaMustSatisfy": "all"
+            },
+            {
+                "name": "Offloading origin",
+                "children": [
+                    {
+                        "name": "Static Content",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "caching",
+                                "options": {
+                                    "behavior": "MAX_AGE",
+                                    "mustRevalidate": false,
+                                    "ttl": "1d"
+                                }
+                            },
+                            {
+                                "name": "prefetch",
+                                "options": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "name": "prefetchable",
+                                "options": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "name": "prefreshCache",
+                                "options": {
+                                    "enabled": true,
+                                    "prefreshval": 95
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "fileExtension",
+                                "options": {
+                                    "matchCaseSensitive": false,
+                                    "matchOperator": "IS_ONE_OF",
+                                    "values": [
+                                        "aif",
+                                        "aiff",
+                                        "au",
+                                        "avi",
+                                        "bin",
+                                        "bmp",
+                                        "cab",
+                                        "carb",
+                                        "cct",
+                                        "cdf",
+                                        "class",
+                                        "css",
+                                        "doc",
+                                        "dcr",
+                                        "dtd",
+                                        "exe",
+                                        "flv",
+                                        "gcf",
+                                        "gff",
+                                        "gif",
+                                        "grv",
+                                        "hdml",
+                                        "hqx",
+                                        "ico",
+                                        "ini",
+                                        "jpeg",
+                                        "jpg",
+                                        "js",
+                                        "mov",
+                                        "mp3",
+                                        "nc",
+                                        "pct",
+                                        "pdf",
+                                        "png",
+                                        "ppc",
+                                        "pws",
+                                        "swa",
+                                        "swf",
+                                        "txt",
+                                        "vbs",
+                                        "w32",
+                                        "wav",
+                                        "wbmp",
+                                        "wml",
+                                        "wmlc",
+                                        "wmls",
+                                        "wmlsc",
+                                        "xsd",
+                                        "zip",
+                                        "pict",
+                                        "tif",
+                                        "tiff",
+                                        "mid",
+                                        "midi",
+                                        "ttf",
+                                        "eot",
+                                        "woff",
+                                        "woff2",
+                                        "otf",
+                                        "svg",
+                                        "svgz",
+                                        "webp",
+                                        "jxr",
+                                        "jar",
+                                        "jp2"
+                                    ]
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "Dynamic Content",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "downstreamCache",
+                                "options": {
+                                    "behavior": "TUNNEL_ORIGIN"
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "cacheability",
+                                "options": {
+                                    "matchOperator": "IS_NOT",
+                                    "value": "CACHEABLE"
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "Cookie bypass cache",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "caching",
+                                "options": {
+                                    "behavior": "BYPASS_CACHE"
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "requestCookie",
+                                "options": {
+                                    "cookieName": "xxxx",
+                                    "matchOperator": "EXISTS",
+                                    "matchWildcardName": false,
+                                    "matchCaseSensitiveName": true
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "Admin bypass cache",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "caching",
+                                "options": {
+                                    "behavior": "BYPASS_CACHE"
+                                }
+                            },
+                            {
+                                "name": "downstreamCache",
+                                "options": {
+                                    "behavior": "BUST"
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "hostname",
+                                "options": {
+                                    "matchOperator": "IS_ONE_OF",
+                                    "values": [
+                                        "/admin*",
+                                        "/admin/*"
+                                    ]
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all"
+                    }
+                ],
+                "behaviors": [
+                    {
+                        "name": "caching",
+                        "options": {
+                            "behavior": "CACHE_CONTROL_AND_EXPIRES",
+                            "mustRevalidate": false,
+                            "defaultTtl": "0m",
+                            "honorPrivateEnabled": true,
+                            "honorMustrevalidateEnabled": false
+                        }
+                    },
+                    {
+                        "name": "downstreamCache",
+                        "options": {
+                            "behavior": "TUNNEL_ORIGIN"
+                        }
+                    }
+                ],
+                "criteria": [],
+                "criteriaMustSatisfy": "all"
+            },
+            {
+                "name": "Accelerating delivery",
+                "children": [
+                    {
+                        "name": "Enable HTTP2",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "http2",
+                                "options": {
+                                    "enabled": ""
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "bucket",
+                                "options": {
+                                    "percentage": 100
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "DNS Async Refresh",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "dnsAsyncRefresh",
+                                "options": {
+                                    "enabled": true,
+                                    "timeout": "2h"
+                                }
+                            }
+                        ],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "Chunked Transfer Encoding",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "allowTransferEncoding",
+                                "options": {
+                                    "enabled": true
+                                }
+                            }
+                        ],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "Tiered distribution",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "tieredDistribution",
+                                "options": {
+                                    "enabled": true
+                                }
+                            }
+                        ],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all"
+                    }
+                ],
+                "behaviors": [],
+                "criteria": [],
+                "criteriaMustSatisfy": "all"
+            },
+            {
+                "name": "Increasing Security",
+                "children": [
+                    {
+                        "name": "Allowed HTTP Methods",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "allowPost",
+                                "options": {
+                                    "enabled": true,
+                                    "allowWithoutContentLength": false
+                                }
+                            },
+                            {
+                                "name": "allowDelete",
+                                "options": {
+                                    "enabled": true,
+                                    "allowBody": false
+                                }
+                            },
+                            {
+                                "name": "allowPut",
+                                "options": {
+                                    "enabled": true
+                                }
+                            }
+                        ],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all"
+                    },
+                    {
+                        "name": "HTTP headers",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "modifyOutgoingResponseHeader",
+                                "options": {
+                                    "action": "DELETE",
+                                    "standardDeleteHeaderName": "OTHER",
+                                    "customHeaderName": "Server"
+                                }
+                            },
+                            {
+                                "name": "modifyOutgoingResponseHeader",
+                                "options": {
+                                    "action": "DELETE",
+                                    "standardDeleteHeaderName": "OTHER",
+                                    "customHeaderName": "X-Powered-By"
+                                }
+                            },
+                            {
+                                "name": "modifyOutgoingResponseHeader",
+                                "options": {
+                                    "action": "DELETE",
+                                    "standardDeleteHeaderName": "OTHER",
+                                    "customHeaderName": "Forwarded"
+                                }
+                            }
+                        ],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all"
+                    }
+                ],
+                "behaviors": [],
+                "criteria": [],
+                "criteriaMustSatisfy": "all"
+            },
+            {
+                "name": "Minimizing Payload",
+                "children": [
+                    {
+                        "name": "Content Compression",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "gzipResponse",
+                                "options": {
+                                    "behavior": "ALWAYS"
+                                }
+                            }
+                        ],
+                        "criteria": [
+                            {
+                                "name": "contentType",
+                                "options": {
+                                    "matchCaseSensitive": false,
+                                    "matchOperator": "IS_ONE_OF",
+                                    "matchWildcard": true,
+                                    "values": [
+                                        "text/*",
+                                        "application/javascript",
+                                        "application/x-javascript",
+                                        "application/x-javascript*",
+                                        "application/json",
+                                        "application/x-json",
+                                        "application/*+json",
+                                        "application/*+xml",
+                                        "application/text",
+                                        "application/vnd.microsoft.icon",
+                                        "application/vnd-ms-fontobject",
+                                        "application/x-font-ttf",
+                                        "application/x-font-opentype",
+                                        "application/x-font-truetype",
+                                        "application/xmlfont/eot",
+                                        "application/xml",
+                                        "font/opentype",
+                                        "font/otf",
+                                        "font/eot",
+                                        "image/svg+xml",
+                                        "image/vnd.microsoft.icon"
+                                    ]
+                                }
+                            }
+                        ],
+                        "criteriaMustSatisfy": "all"
+                    }
+                ],
+                "behaviors": [],
+                "criteria": [],
+                "criteriaMustSatisfy": "all"
+            },
+            {
+                "name": "Adding Logic",
+                "children": [
+                    {
+                        "name": "Remove Vary Header",
+                        "children": [],
+                        "behaviors": [
+                            {
+                                "name": "removeVary",
+                                "options": {
+                                    "enabled": true
+                                }
+                            }
+                        ],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all",
+                        "comments": "Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate."
+                    },
+                    {
+                        "name": "Enforce https",
+                        "children": [
+                            {
+                                "name": "Redirect to HTTPS",
+                                "children": [],
+                                "behaviors": [
+                                    {
+                                        "name": "redirect",
+                                        "options": {
+                                            "queryString": "APPEND",
+                                            "responseCode": 301,
+                                            "destinationHostname": "SAME_AS_REQUEST",
+                                            "destinationPath": "SAME_AS_REQUEST",
+                                            "destinationProtocol": "HTTPS",
+                                            "mobileDefaultChoice": "DEFAULT"
+                                        }
+                                    }
+                                ],
+                                "criteria": [
+                                    {
+                                        "name": "requestProtocol",
+                                        "options": {
+                                            "value": "HTTP"
+                                        }
+                                    }
+                                ],
+                                "criteriaMustSatisfy": "all",
+                                "comments": "Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently). You may change the response code to 302 if needed."
+                            }
+                        ],
+                        "behaviors": [],
+                        "criteria": [],
+                        "criteriaMustSatisfy": "all"
+                    }
+                ],
+                "behaviors": [],
+                "criteria": [],
+                "criteriaMustSatisfy": "all"
+            }
+        ],
+        "behaviors": [
+            {
+                "name": "origin",
+                "options": {
+                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                    "compress": true,
+                    "enableTrueClientIp": true,
+                    "forwardHostHeader": "REQUEST_HOST_HEADER",
+                    "httpPort": 80,
+                    "originType": "CUSTOMER",
+                    "hostname": "origin-nonprod.pipeline_papitest",
+                    "originCertificate": "",
+                    "verificationMode": "PLATFORM_SETTINGS",
+                    "ports": "",
+                    "httpsPort": 443,
+                    "originSni": true,
+                    "trueClientIpHeader": "True-Client-IP",
+                    "trueClientIpClientSetting": false
+                }
+            },
+            {
+                "name": "cpCode",
+                "options": {
+                    "value": {
+                        "id": 724490
+                    }
+                }
+            }
+        ],
+        "options": {
+            "is_secure": true
+        },
+        "variables": []
+    }
+}

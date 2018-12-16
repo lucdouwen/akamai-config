@@ -1,6 +1,6 @@
 [
     {
-        "cnameFrom": "nonprodpapitest.vlaanderen.",
+        "cnameFrom": "nonprodpapitest.vlaanderen.be",
         "cnameTo": "mvg.edgekey.net",
         "cnameType": "EDGE_HOSTNAME",
         "edgeHostnameId": null

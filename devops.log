@@ -1,1 +1,1440 @@
 [2018-12-10T16:35:25.791] [INFO] devops-prov.utils - loading 'C:\cygwin64\home\lucd\projects\akamai-config\devopsSettings.json'
+[2018-12-16T21:49:06.439] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/devopsSettings.json'
+[2018-12-16T21:49:06.448] [INFO] devops-prov.factory - Using credentials file: '/Users/lucdouwen/.edgerc', section: 'papi'
+[2018-12-16T21:49:06.449] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/projectInfo.json'
+[2018-12-16T21:49:06.450] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/projectInfo.json'
+[2018-12-16T21:49:06.450] [INFO] devops-prov.project - Overriding edgegrid config with project default:  { section: 'papi' }
+[2018-12-16T21:49:06.453] [INFO] devops-prov.envionment - Merge environment: 'nonprod' in pipeline: 'pipeline_papitest'
+[2018-12-16T21:49:06.454] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/variables.json'
+[2018-12-16T21:49:06.454] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/variableDefinitions.json'
+[2018-12-16T21:49:06.456] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/main.json'
+[2018-12-16T21:49:06.457] [INFO] devops-prov.el - parsing: default
+[2018-12-16T21:49:06.459] [INFO] devops-prov.el - parsing: #include:Origin_servers.json
+[2018-12-16T21:49:06.459] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Origin_servers.json'
+[2018-12-16T21:49:06.459] [INFO] devops-prov.el - parsing: Origin servers
+[2018-12-16T21:49:06.459] [INFO] devops-prov.el - parsing: DEV
+[2018-12-16T21:49:06.460] [INFO] devops-prov.el - parsing: origin
+[2018-12-16T21:49:06.460] [INFO] devops-prov.el - parsing: CUSTOMER
+[2018-12-16T21:49:06.460] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2018-12-16T21:49:06.460] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-nonprod.pipeline_papitest'
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: True-Client-IP
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: vls.dev-vlaanderen.be
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: UAT
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: origin
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: CUSTOMER
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-nonprod.pipeline_papitest'
+[2018-12-16T21:49:06.461] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: True-Client-IP
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: vls.uat-vlaanderen.be
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.462] [INFO] devops-prov.el - parsing: #include:Increasing_insights.json
+[2018-12-16T21:49:06.462] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Increasing_insights.json'
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: Increasing insights
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: CP Codes
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: DEV
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: cpCode
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: ${env.cpCode}
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - Replacing '${env.cpCode}' with: '724490'
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: overheid.dev-vlaanderen.be
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: UAT
+[2018-12-16T21:49:06.463] [INFO] devops-prov.el - parsing: cpCode
+[2018-12-16T21:49:06.464] [INFO] devops-prov.el - parsing: ${env.cpCode}
+[2018-12-16T21:49:06.464] [INFO] devops-prov.el - Replacing '${env.cpCode}' with: '724490'
+[2018-12-16T21:49:06.464] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:49:06.464] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:49:06.464] [INFO] devops-prov.el - parsing: overheid.uat-vlaanderen.be
+[2018-12-16T21:49:06.464] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.464] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.464] [INFO] devops-prov.el - parsing: Log Delivery
+[2018-12-16T21:49:06.464] [INFO] devops-prov.el - parsing: report
+[2018-12-16T21:49:06.465] [INFO] devops-prov.el - parsing: OFF
+[2018-12-16T21:49:06.465] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.465] [INFO] devops-prov.el - parsing: Real User Monitoring
+[2018-12-16T21:49:06.465] [INFO] devops-prov.el - parsing: realUserMonitoring
+[2018-12-16T21:49:06.465] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.465] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.465] [INFO] devops-prov.el - parsing: #include:Offloading_origin.json
+[2018-12-16T21:49:06.465] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Offloading_origin.json'
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: Offloading origin
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: Static Content
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: MAX_AGE
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: 1d
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: prefetch
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: prefetchable
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: prefreshCache
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: fileExtension
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: aif
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: aiff
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: au
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: avi
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: bin
+[2018-12-16T21:49:06.466] [INFO] devops-prov.el - parsing: bmp
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: cab
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: carb
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: cct
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: cdf
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: class
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: css
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: doc
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: dcr
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: dtd
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: exe
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: flv
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: gcf
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: gff
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: gif
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: grv
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: hdml
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: hqx
+[2018-12-16T21:49:06.467] [INFO] devops-prov.el - parsing: ico
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: ini
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: jpeg
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: jpg
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: js
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: mov
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: mp3
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: nc
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: pct
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: pdf
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: png
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: ppc
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: pws
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: swa
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: swf
+[2018-12-16T21:49:06.468] [INFO] devops-prov.el - parsing: txt
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: vbs
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: w32
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: wav
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: wbmp
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: wml
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: wmlc
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: wmls
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: wmlsc
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: xsd
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: zip
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: pict
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: tif
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: tiff
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: mid
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: midi
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: ttf
+[2018-12-16T21:49:06.469] [INFO] devops-prov.el - parsing: eot
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: woff
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: woff2
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: otf
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: svg
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: svgz
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: webp
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: jxr
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: jar
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: jp2
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: Dynamic Content
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: downstreamCache
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: TUNNEL_ORIGIN
+[2018-12-16T21:49:06.470] [INFO] devops-prov.el - parsing: cacheability
+[2018-12-16T21:49:06.471] [INFO] devops-prov.el - parsing: IS_NOT
+[2018-12-16T21:49:06.471] [INFO] devops-prov.el - parsing: CACHEABLE
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: Cookie bypass cache
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: BYPASS_CACHE
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: requestCookie
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: xxxx
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: EXISTS
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: Admin bypass cache
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:49:06.473] [INFO] devops-prov.el - parsing: BYPASS_CACHE
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: downstreamCache
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: BUST
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: /admin*
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: /admin/*
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: CACHE_CONTROL_AND_EXPIRES
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: 0m
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: downstreamCache
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: TUNNEL_ORIGIN
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.474] [INFO] devops-prov.el - parsing: #include:Accelerating_delivery.json
+[2018-12-16T21:49:06.474] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Accelerating_delivery.json'
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: Accelerating delivery
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: Enable HTTP2
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: http2
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: bucket
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: DNS Async Refresh
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: dnsAsyncRefresh
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: 2h
+[2018-12-16T21:49:06.475] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.476] [INFO] devops-prov.el - parsing: Chunked Transfer Encoding
+[2018-12-16T21:49:06.476] [INFO] devops-prov.el - parsing: allowTransferEncoding
+[2018-12-16T21:49:06.476] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.476] [INFO] devops-prov.el - parsing: Tiered distribution
+[2018-12-16T21:49:06.476] [INFO] devops-prov.el - parsing: tieredDistribution
+[2018-12-16T21:49:06.476] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.476] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.476] [INFO] devops-prov.el - parsing: #include:Increasing_Security.json
+[2018-12-16T21:49:06.476] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Increasing_Security.json'
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: Increasing Security
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: Allowed HTTP Methods
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: allowPost
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: allowDelete
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: allowPut
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: HTTP headers
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: DELETE
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: OTHER
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: Server
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: DELETE
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: OTHER
+[2018-12-16T21:49:06.477] [INFO] devops-prov.el - parsing: X-Powered-By
+[2018-12-16T21:49:06.478] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2018-12-16T21:49:06.478] [INFO] devops-prov.el - parsing: DELETE
+[2018-12-16T21:49:06.478] [INFO] devops-prov.el - parsing: OTHER
+[2018-12-16T21:49:06.478] [INFO] devops-prov.el - parsing: Forwarded
+[2018-12-16T21:49:06.478] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.478] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.478] [INFO] devops-prov.el - parsing: #include:Minimizing_Payload.json
+[2018-12-16T21:49:06.478] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Minimizing_Payload.json'
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: Minimizing Payload
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: Content Compression
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: gzipResponse
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: ALWAYS
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: contentType
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: text/*
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: application/javascript
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: application/x-javascript
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: application/x-javascript*
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: application/json
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: application/x-json
+[2018-12-16T21:49:06.479] [INFO] devops-prov.el - parsing: application/*+json
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: application/*+xml
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: application/text
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: application/vnd.microsoft.icon
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: application/vnd-ms-fontobject
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: application/x-font-ttf
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: application/x-font-opentype
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: application/x-font-truetype
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: application/xmlfont/eot
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: application/xml
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: font/opentype
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: font/otf
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: font/eot
+[2018-12-16T21:49:06.480] [INFO] devops-prov.el - parsing: image/svg+xml
+[2018-12-16T21:49:06.481] [INFO] devops-prov.el - parsing: image/vnd.microsoft.icon
+[2018-12-16T21:49:06.481] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.481] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.481] [INFO] devops-prov.el - parsing: #include:Adding_Logic.json
+[2018-12-16T21:49:06.481] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Adding_Logic.json'
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: Adding Logic
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: Remove Vary Header
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: removeVary
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate.
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: Enforce https
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: Redirect to HTTPS
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: redirect
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: APPEND
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: SAME_AS_REQUEST
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: SAME_AS_REQUEST
+[2018-12-16T21:49:06.482] [INFO] devops-prov.el - parsing: HTTPS
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: DEFAULT
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: requestProtocol
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: HTTP
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently). You may change the response code to 302 if needed.
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: origin
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: CUSTOMER
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-nonprod.pipeline_papitest'
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:49:06.483] [INFO] devops-prov.el - parsing: True-Client-IP
+[2018-12-16T21:49:06.484] [INFO] devops-prov.el - parsing: cpCode
+[2018-12-16T21:49:06.484] [INFO] devops-prov.el - parsing: ${env.cpCode}
+[2018-12-16T21:49:06.484] [INFO] devops-prov.el - Replacing '${env.cpCode}' with: '724490'
+[2018-12-16T21:49:06.484] [INFO] devops-prov.utils - writing '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/dist/nonprod.pipeline_papitest.papi.json'
+[2018-12-16T21:49:06.485] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/envInfo.json'
+[2018-12-16T21:49:06.485] [INFO] devops-prov.utils - writing '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/envInfo.json'
+[2018-12-16T21:49:06.486] [INFO] devops-prov.envionment - resource hash:  d335a24a024680937fdda9e7cf58fa7334a0e5b6aff462aec164c5480ec154c1
+[2018-12-16T21:49:06.488] [INFO] devops-prov.factory - need to create papi
+[2018-12-16T21:49:06.490] [INFO] devops-prov.openclient - Requesting: PUT /papi/v0/properties/504463/versions/1/rules?dryRun=true
+[2018-12-16T21:49:06.497] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-ntlrruicobjgforf-a6rwhv66r5iwzaeb;access_token=akab-vipqvvrrfiflbvz4-ubdph2j6svwesup4;timestamp=20181216T20:49:06+0000;nonce=425eb02b-5b24-4e39-afd7-d6bc7aa54ec4;
+
+[2018-12-16T21:49:06.497] [INFO] devops-prov.edgegrid.helpers - Body is "{"rules":{"name":"default","children":[{"name":"Origin servers","children":[{"name":"DEV","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","hostname":"origin-nonprod.pipeline_papitest","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"originCertificate":"","verificationMode":"PLATFORM_SETTINGS","ports":"","httpPort":80,"httpsPort":443,"originSni":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["vls.dev-vlaanderen.be"]}}],"criteriaMustSatisfy":"all"},{"name":"UAT","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","hostname":"origin-nonprod.pipeline_papitest","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"originCertificate":"","verificationMode":"PLATFORM_SETTINGS","ports":"","httpPort":80,"httpsPort":443,"originSni":false,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["vls.uat-vlaanderen.be"]}}],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Increasing insights","children":[{"name":"CP Codes","children":[{"name":"DEV","children":[],"behaviors":[{"name":"cpCode","options":{"value":{"id":724490}}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["overheid.dev-vlaanderen.be"]}}],"criteriaMustSatisfy":"all"},{"name":"UAT","children":[],"behaviors":[{"name":"cpCode","options":{"value":{"id":724490}}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["overheid.uat-vlaanderen.be"]}}],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Log Delivery","children":[],"behaviors":[{"name":"report","options":{"logHost":true,"logReferer":true,"logUserAgent":true,"logAcceptLanguage":true,"logCookies":"OFF","logCustomLogField":false}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Real User Monitoring","children":[],"behaviors":[{"name":"realUserMonitoring","options":{"enabled":false}}],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Offloading origin","children":[{"name":"Static Content","children":[],"behaviors":[{"name":"caching","options":{"behavior":"MAX_AGE","mustRevalidate":false,"ttl":"1d"}},{"name":"prefetch","options":{"enabled":true}},{"name":"prefetchable","options":{"enabled":true}},{"name":"prefreshCache","options":{"enabled":true,"prefreshval":95}}],"criteria":[{"name":"fileExtension","options":{"matchCaseSensitive":false,"matchOperator":"IS_ONE_OF","values":["aif","aiff","au","avi","bin","bmp","cab","carb","cct","cdf","class","css","doc","dcr","dtd","exe","flv","gcf","gff","gif","grv","hdml","hqx","ico","ini","jpeg","jpg","js","mov","mp3","nc","pct","pdf","png","ppc","pws","swa","swf","txt","vbs","w32","wav","wbmp","wml","wmlc","wmls","wmlsc","xsd","zip","pict","tif","tiff","mid","midi","ttf","eot","woff","woff2","otf","svg","svgz","webp","jxr","jar","jp2"]}}],"criteriaMustSatisfy":"all"},{"name":"Dynamic Content","children":[],"behaviors":[{"name":"downstreamCache","options":{"behavior":"TUNNEL_ORIGIN"}}],"criteria":[{"name":"cacheability","options":{"matchOperator":"IS_NOT","value":"CACHEABLE"}}],"criteriaMustSatisfy":"all"},{"name":"Cookie bypass cache","children":[],"behaviors":[{"name":"caching","options":{"behavior":"BYPASS_CACHE"}}],"criteria":[{"name":"requestCookie","options":{"cookieName":"xxxx","matchOperator":"EXISTS","matchWildcardName":false,"matchCaseSensitiveName":true}}],"criteriaMustSatisfy":"all"},{"name":"Admin bypass cache","children":[],"behaviors":[{"name":"caching","options":{"behavior":"BYPASS_CACHE"}},{"name":"downstreamCache","options":{"behavior":"BUST"}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["/admin*","/admin/*"]}}],"criteriaMustSatisfy":"all"}],"behaviors":[{"name":"caching","options":{"behavior":"CACHE_CONTROL_AND_EXPIRES","mustRevalidate":false,"defaultTtl":"0m","honorPrivateEnabled":true,"honorMustrevalidateEnabled":false}},{"name":"downstreamCache","options":{"behavior":"TUNNEL_ORIGIN"}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Accelerating delivery","children":[{"name":"Enable HTTP2","children":[],"behaviors":[{"name":"http2","options":{"enabled":""}}],"criteria":[{"name":"bucket","options":{"percentage":100}}],"criteriaMustSatisfy":"all"},{"name":"DNS Async Refresh","children":[],"behaviors":[{"name":"dnsAsyncRefresh","options":{"enabled":true,"timeout":"2h"}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Chunked Transfer Encoding","children":[],"behaviors":[{"name":"allowTransferEncoding","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Tiered distribution","children":[],"behaviors":[{"name":"tieredDistribution","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Increasing Security","children":[{"name":"Allowed HTTP Methods","children":[],"behaviors":[{"name":"allowPost","options":{"enabled":true,"allowWithoutContentLength":false}},{"name":"allowDelete","options":{"enabled":true,"allowBody":false}},{"name":"allowPut","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"HTTP headers","children":[],"behaviors":[{"name":"modifyOutgoingResponseHeader","options":{"action":"DELETE","standardDeleteHeaderName":"OTHER","customHeaderName":"Server"}},{"name":"modifyOutgoingResponseHeader","options":{"action":"DELETE","standardDeleteHeaderName":"OTHER","customHeaderName":"X-Powered-By"}},{"name":"modifyOutgoingResponseHeader","options":{"action":"DELETE","standardDeleteHeaderName":"OTHER","customHeaderName":"Forwarded"}}],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Minimizing Payload","children":[{"name":"Content Compression","children":[],"behaviors":[{"name":"gzipResponse","options":{"behavior":"ALWAYS"}}],"criteria":[{"name":"contentType","options":{"matchCaseSensitive":false,"matchOperator":"IS_ONE_OF","matchWildcard":true,"values":["text/*","application/javascript","application/x-javascript","application/x-javascript*","application/json","application/x-json","application/*+json","application/*+xml","application/text","application/vnd.microsoft.icon","application/vnd-ms-fontobject","application/x-font-ttf","application/x-font-opentype","application/x-font-truetype","application/xmlfont/eot","application/xml","font/opentype","font/otf","font/eot","image/svg+xml","image/vnd.microsoft.icon"]}}],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Adding Logic","children":[{"name":"Remove Vary Header","children":[],"behaviors":[{"name":"removeVary","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all","comments":"Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate."},{"name":"Enforce https","children":[{"name":"Redirect to HTTPS","children":[],"behaviors":[{"name":"redirect","options":{"queryString":"APPEND","responseCode":301,"destinationHostname":"SAME_AS_REQUEST","destinationPath":"SAME_AS_REQUEST","destinationProtocol":"HTTPS","mobileDefaultChoice":"DEFAULT"}}],"criteria":[{"name":"requestProtocol","options":{"value":"HTTP"}}],"criteriaMustSatisfy":"all","comments":"Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently). You may change the response code to 302 if needed."}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[{"name":"origin","options":{"cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"forwardHostHeader":"REQUEST_HOST_HEADER","httpPort":80,"originType":"CUSTOMER","hostname":"origin-nonprod.pipeline_papitest","originCertificate":"","verificationMode":"PLATFORM_SETTINGS","ports":"","httpsPort":443,"originSni":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false}},{"name":"cpCode","options":{"value":{"id":724490}}}],"options":{"is_secure":true},"variables":[]}}"
+[2018-12-16T21:49:06.497] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 8486
+[2018-12-16T21:49:06.497] [INFO] devops-prov.edgegrid.helpers - Data to sign: "PUT	https	akab-2ynhsd2fxtviks4k-vk6xq723hcv5h3na.luna.akamaiapis.net	/papi/v0/properties/504463/versions/1/rules?dryRun=true			EG1-HMAC-SHA256 client_token=akab-ntlrruicobjgforf-a6rwhv66r5iwzaeb;access_token=akab-vipqvvrrfiflbvz4-ubdph2j6svwesup4;timestamp=20181216T20:49:06+0000;nonce=425eb02b-5b24-4e39-afd7-d6bc7aa54ec4;" 
+
+[2018-12-16T21:49:06.497] [INFO] devops-prov.edgegrid.helpers - Signing key: Kcz/zq5WVG0fX1mdadOUvH+dLTps/6XrYyx/hgvdp8Q=
+
+[2018-12-16T21:49:06.498] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-ntlrruicobjgforf-a6rwhv66r5iwzaeb;access_token=akab-vipqvvrrfiflbvz4-ubdph2j6svwesup4;timestamp=20181216T20:49:06+0000;nonce=425eb02b-5b24-4e39-afd7-d6bc7aa54ec4;signature=or1PO1ZbHrXxOLh3l5lF1NhXLBZnDaaVT5Uw0Lyd8Bw=
+
+[2018-12-16T21:49:06.521] [INFO] devops-prov.edgegrid - request { debugId: 1,
+  uri:
+   'https://akab-2ynhsd2fxtviks4k-vk6xq723hcv5h3na.luna.akamaiapis.net/papi/v0/properties/504463/versions/1/rules?dryRun=true',
+  method: 'PUT',
+  headers:
+   { 'X-User-Agent': 'Akamai-PD; Version=0.3.0',
+     'Content-Type': 'application/vnd.akamai.papirules.v2018-09-12+json',
+     Authorization:
+      'EG1-HMAC-SHA256 client_token=akab-ntlrruicobjgforf-a6rwhv66r5iwzaeb;access_token=akab-vipqvvrrfiflbvz4-ubdph2j6svwesup4;timestamp=20181216T20:49:06+0000;nonce=425eb02b-5b24-4e39-afd7-d6bc7aa54ec4;signature=or1PO1ZbHrXxOLh3l5lF1NhXLBZnDaaVT5Uw0Lyd8Bw=',
+     host: 'akab-2ynhsd2fxtviks4k-vk6xq723hcv5h3na.luna.akamaiapis.net',
+     'content-length': 8486 },
+  body:
+   '{"rules":{"name":"default","children":[{"name":"Origin servers","children":[{"name":"DEV","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","hostname":"origin-nonprod.pipeline_papitest","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"originCertificate":"","verificationMode":"PLATFORM_SETTINGS","ports":"","httpPort":80,"httpsPort":443,"originSni":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["vls.dev-vlaanderen.be"]}}],"criteriaMustSatisfy":"all"},{"name":"UAT","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","hostname":"origin-nonprod.pipeline_papitest","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"originCertificate":"","verificationMode":"PLATFORM_SETTINGS","ports":"","httpPort":80,"httpsPort":443,"originSni":false,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["vls.uat-vlaanderen.be"]}}],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Increasing insights","children":[{"name":"CP Codes","children":[{"name":"DEV","children":[],"behaviors":[{"name":"cpCode","options":{"value":{"id":724490}}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["overheid.dev-vlaanderen.be"]}}],"criteriaMustSatisfy":"all"},{"name":"UAT","children":[],"behaviors":[{"name":"cpCode","options":{"value":{"id":724490}}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["overheid.uat-vlaanderen.be"]}}],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Log Delivery","children":[],"behaviors":[{"name":"report","options":{"logHost":true,"logReferer":true,"logUserAgent":true,"logAcceptLanguage":true,"logCookies":"OFF","logCustomLogField":false}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Real User Monitoring","children":[],"behaviors":[{"name":"realUserMonitoring","options":{"enabled":false}}],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Offloading origin","children":[{"name":"Static Content","children":[],"behaviors":[{"name":"caching","options":{"behavior":"MAX_AGE","mustRevalidate":false,"ttl":"1d"}},{"name":"prefetch","options":{"enabled":true}},{"name":"prefetchable","options":{"enabled":true}},{"name":"prefreshCache","options":{"enabled":true,"prefreshval":95}}],"criteria":[{"name":"fileExtension","options":{"matchCaseSensitive":false,"matchOperator":"IS_ONE_OF","values":["aif","aiff","au","avi","bin","bmp","cab","carb","cct","cdf","class","css","doc","dcr","dtd","exe","flv","gcf","gff","gif","grv","hdml","hqx","ico","ini","jpeg","jpg","js","mov","mp3","nc","pct","pdf","png","ppc","pws","swa","swf","txt","vbs","w32","wav","wbmp","wml","wmlc","wmls","wmlsc","xsd","zip","pict","tif","tiff","mid","midi","ttf","eot","woff","woff2","otf","svg","svgz","webp","jxr","jar","jp2"]}}],"criteriaMustSatisfy":"all"},{"name":"Dynamic Content","children":[],"behaviors":[{"name":"downstreamCache","options":{"behavior":"TUNNEL_ORIGIN"}}],"criteria":[{"name":"cacheability","options":{"matchOperator":"IS_NOT","value":"CACHEABLE"}}],"criteriaMustSatisfy":"all"},{"name":"Cookie bypass cache","children":[],"behaviors":[{"name":"caching","options":{"behavior":"BYPASS_CACHE"}}],"criteria":[{"name":"requestCookie","options":{"cookieName":"xxxx","matchOperator":"EXISTS","matchWildcardName":false,"matchCaseSensitiveName":true}}],"criteriaMustSatisfy":"all"},{"name":"Admin bypass cache","children":[],"behaviors":[{"name":"caching","options":{"behavior":"BYPASS_CACHE"}},{"name":"downstreamCache","options":{"behavior":"BUST"}}],"criteria":[{"name":"hostname","options":{"matchOperator":"IS_ONE_OF","values":["/admin*","/admin/*"]}}],"criteriaMustSatisfy":"all"}],"behaviors":[{"name":"caching","options":{"behavior":"CACHE_CONTROL_AND_EXPIRES","mustRevalidate":false,"defaultTtl":"0m","honorPrivateEnabled":true,"honorMustrevalidateEnabled":false}},{"name":"downstreamCache","options":{"behavior":"TUNNEL_ORIGIN"}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Accelerating delivery","children":[{"name":"Enable HTTP2","children":[],"behaviors":[{"name":"http2","options":{"enabled":""}}],"criteria":[{"name":"bucket","options":{"percentage":100}}],"criteriaMustSatisfy":"all"},{"name":"DNS Async Refresh","children":[],"behaviors":[{"name":"dnsAsyncRefresh","options":{"enabled":true,"timeout":"2h"}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Chunked Transfer Encoding","children":[],"behaviors":[{"name":"allowTransferEncoding","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Tiered distribution","children":[],"behaviors":[{"name":"tieredDistribution","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Increasing Security","children":[{"name":"Allowed HTTP Methods","children":[],"behaviors":[{"name":"allowPost","options":{"enabled":true,"allowWithoutContentLength":false}},{"name":"allowDelete","options":{"enabled":true,"allowBody":false}},{"name":"allowPut","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"HTTP headers","children":[],"behaviors":[{"name":"modifyOutgoingResponseHeader","options":{"action":"DELETE","standardDeleteHeaderName":"OTHER","customHeaderName":"Server"}},{"name":"modifyOutgoingResponseHeader","options":{"action":"DELETE","standardDeleteHeaderName":"OTHER","customHeaderName":"X-Powered-By"}},{"name":"modifyOutgoingResponseHeader","options":{"action":"DELETE","standardDeleteHeaderName":"OTHER","customHeaderName":"Forwarded"}}],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Minimizing Payload","children":[{"name":"Content Compression","children":[],"behaviors":[{"name":"gzipResponse","options":{"behavior":"ALWAYS"}}],"criteria":[{"name":"contentType","options":{"matchCaseSensitive":false,"matchOperator":"IS_ONE_OF","matchWildcard":true,"values":["text/*","application/javascript","application/x-javascript","application/x-javascript*","application/json","application/x-json","application/*+json","application/*+xml","application/text","application/vnd.microsoft.icon","application/vnd-ms-fontobject","application/x-font-ttf","application/x-font-opentype","application/x-font-truetype","application/xmlfont/eot","application/xml","font/opentype","font/otf","font/eot","image/svg+xml","image/vnd.microsoft.icon"]}}],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"},{"name":"Adding Logic","children":[{"name":"Remove Vary Header","children":[],"behaviors":[{"name":"removeVary","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all","comments":"Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate."},{"name":"Enforce https","children":[{"name":"Redirect to HTTPS","children":[],"behaviors":[{"name":"redirect","options":{"queryString":"APPEND","responseCode":301,"destinationHostname":"SAME_AS_REQUEST","destinationPath":"SAME_AS_REQUEST","destinationProtocol":"HTTPS","mobileDefaultChoice":"DEFAULT"}}],"criteria":[{"name":"requestProtocol","options":{"value":"HTTP"}}],"criteriaMustSatisfy":"all","comments":"Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently). You may change the response code to 302 if needed."}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all"}],"behaviors":[{"name":"origin","options":{"cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"forwardHostHeader":"REQUEST_HOST_HEADER","httpPort":80,"originType":"CUSTOMER","hostname":"origin-nonprod.pipeline_papitest","originCertificate":"","verificationMode":"PLATFORM_SETTINGS","ports":"","httpsPort":443,"originSni":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false}},{"name":"cpCode","options":{"value":{"id":724490}}}],"options":{"is_secure":true},"variables":[]}}' }
+[2018-12-16T21:49:09.982] [INFO] devops-prov.edgegrid - response { debugId: 1,
+  headers:
+   { server: 'Apache-Coyote/1.1',
+     'x-limit-elements-per-property-limit': '1500',
+     'x-limit-elements-per-property-remaining': '1458',
+     'x-limit-max-nested-rules-limit': '6',
+     'x-limit-max-nested-rules-remaining': '4',
+     'content-language': 'en',
+     link:
+      '<https://akab-2ynhsd2fxtviks4k-vk6xq723hcv5h3na.luna.akamaiapis.net/papi/v0/schemas/products/prd_Site_Accel/v2018-09-12>; rel="describedby"',
+     etag: '"4268e1bbf47f2a8340a599b09cdca6a631f9fa32"',
+     vary: 'Accept-Encoding',
+     'content-type':
+      'application/vnd.akamai.papirules.v2018-09-12+json;charset=UTF-8',
+     'content-length': '16158',
+     date: 'Sun, 16 Dec 2018 20:49:09 GMT',
+     connection: 'close' },
+  statusCode: 200,
+  body:
+   '{\n  "accountId" : "act_F-AC-2438013",\n  "contractId" : "ctr_P-2D0UA15",\n  "groupId" : "grp_119284",\n  "propertyId" : "prp_504463",\n  "propertyName" : "nonprod.pipeline_papitest",\n  "propertyVersion" : 1,\n  "etag" : "4268e1bbf47f2a8340a599b09cdca6a631f9fa32",\n  "rules" : {\n    "name" : "default",\n    "children" : [ {\n      "name" : "Origin servers",\n      "children" : [ {\n        "name" : "DEV",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "origin",\n          "options" : {\n            "originType" : "CUSTOMER",\n            "hostname" : "origin-nonprod.pipeline_papitest",\n            "forwardHostHeader" : "REQUEST_HOST_HEADER",\n            "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n            "compress" : true,\n            "enableTrueClientIp" : true,\n            "originCertificate" : "",\n            "verificationMode" : "PLATFORM_SETTINGS",\n            "ports" : "",\n            "httpPort" : 80,\n            "httpsPort" : 443,\n            "originSni" : true,\n            "trueClientIpHeader" : "True-Client-IP",\n            "trueClientIpClientSetting" : false\n          }\n        } ],\n        "criteria" : [ {\n          "name" : "hostname",\n          "options" : {\n            "matchOperator" : "IS_ONE_OF",\n            "values" : [ "vls.dev-vlaanderen.be" ]\n          }\n        } ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "UAT",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "origin",\n          "options" : {\n            "originType" : "CUSTOMER",\n            "hostname" : "origin-nonprod.pipeline_papitest",\n            "forwardHostHeader" : "REQUEST_HOST_HEADER",\n            "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n            "compress" : true,\n            "enableTrueClientIp" : true,\n            "originCertificate" : "",\n            "verificationMode" : "PLATFORM_SETTINGS",\n            "ports" : "",\n            "httpPort" : 80,\n            "httpsPort" : 443,\n            "originSni" : false,\n            "trueClientIpHeader" : "True-Client-IP",\n            "trueClientIpClientSetting" : false\n          }\n        } ],\n        "criteria" : [ {\n          "name" : "hostname",\n          "options" : {\n            "matchOperator" : "IS_ONE_OF",\n            "values" : [ "vls.uat-vlaanderen.be" ]\n          }\n        } ],\n        "criteriaMustSatisfy" : "all"\n      } ],\n      "behaviors" : [ ],\n      "criteria" : [ ],\n      "criteriaMustSatisfy" : "all"\n    }, {\n      "name" : "Increasing insights",\n      "children" : [ {\n        "name" : "CP Codes",\n        "children" : [ {\n          "name" : "DEV",\n          "children" : [ ],\n          "behaviors" : [ {\n            "name" : "cpCode",\n            "options" : {\n              "value" : {\n                "id" : 724490\n              }\n            }\n          } ],\n          "criteria" : [ {\n            "name" : "hostname",\n            "options" : {\n              "matchOperator" : "IS_ONE_OF",\n              "values" : [ "overheid.dev-vlaanderen.be" ]\n            }\n          } ],\n          "criteriaMustSatisfy" : "all"\n        }, {\n          "name" : "UAT",\n          "children" : [ ],\n          "behaviors" : [ {\n            "name" : "cpCode",\n            "options" : {\n              "value" : {\n                "id" : 724490\n              }\n            }\n          } ],\n          "criteria" : [ {\n            "name" : "hostname",\n            "options" : {\n              "matchOperator" : "IS_ONE_OF",\n              "values" : [ "overheid.uat-vlaanderen.be" ]\n            }\n          } ],\n          "criteriaMustSatisfy" : "all"\n        } ],\n        "behaviors" : [ ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "Log Delivery",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "report",\n          "options" : {\n            "logHost" : true,\n            "logReferer" : true,\n            "logUserAgent" : true,\n            "logAcceptLanguage" : true,\n            "logCookies" : "OFF",\n            "logCustomLogField" : false\n          }\n        } ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "Real User Monitoring",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "realUserMonitoring",\n          "options" : {\n            "enabled" : false\n          }\n        } ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all"\n      } ],\n      "behaviors" : [ ],\n      "criteria" : [ ],\n      "criteriaMustSatisfy" : "all"\n    }, {\n      "name" : "Offloading origin",\n      "children" : [ {\n        "name" : "Static Content",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "caching",\n          "options" : {\n            "behavior" : "MAX_AGE",\n            "mustRevalidate" : false,\n            "ttl" : "1d"\n          }\n        }, {\n          "name" : "prefetch",\n          "options" : {\n            "enabled" : true\n          }\n        }, {\n          "name" : "prefetchable",\n          "options" : {\n            "enabled" : true\n          }\n        }, {\n          "name" : "prefreshCache",\n          "options" : {\n            "enabled" : true,\n            "prefreshval" : 95\n          }\n        } ],\n        "criteria" : [ {\n          "name" : "fileExtension",\n          "options" : {\n            "matchCaseSensitive" : false,\n            "matchOperator" : "IS_ONE_OF",\n            "values" : [ "aif", "aiff", "au", "avi", "bin", "bmp", "cab", "carb", "cct", "cdf", "class", "css", "doc", "dcr", "dtd", "exe", "flv", "gcf", "gff", "gif", "grv", "hdml", "hqx", "ico", "ini", "jpeg", "jpg", "js", "mov", "mp3", "nc", "pct", "pdf", "png", "ppc", "pws", "swa", "swf", "txt", "vbs", "w32", "wav", "wbmp", "wml", "wmlc", "wmls", "wmlsc", "xsd", "zip", "pict", "tif", "tiff", "mid", "midi", "ttf", "eot", "woff", "woff2", "otf", "svg", "svgz", "webp", "jxr", "jar", "jp2" ]\n          }\n        } ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "Dynamic Content",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "downstreamCache",\n          "options" : {\n            "behavior" : "TUNNEL_ORIGIN"\n          }\n        } ],\n        "criteria" : [ {\n          "name" : "cacheability",\n          "options" : {\n            "matchOperator" : "IS_NOT",\n            "value" : "CACHEABLE"\n          }\n        } ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "Cookie bypass cache",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "caching",\n          "options" : {\n            "behavior" : "BYPASS_CACHE"\n          }\n        } ],\n        "criteria" : [ {\n          "name" : "requestCookie",\n          "options" : {\n            "cookieName" : "xxxx",\n            "matchOperator" : "EXISTS",\n            "matchWildcardName" : false,\n            "matchCaseSensitiveName" : true\n          }\n        } ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "Admin bypass cache",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "caching",\n          "options" : {\n            "behavior" : "BYPASS_CACHE"\n          }\n        }, {\n          "name" : "downstreamCache",\n          "options" : {\n            "behavior" : "BUST"\n          }\n        } ],\n        "criteria" : [ {\n          "name" : "hostname",\n          "options" : {\n            "matchOperator" : "IS_ONE_OF",\n            "values" : [ "/admin*", "/admin/*" ]\n          }\n        } ],\n        "criteriaMustSatisfy" : "all"\n      } ],\n      "behaviors" : [ {\n        "name" : "caching",\n        "options" : {\n          "behavior" : "CACHE_CONTROL_AND_EXPIRES",\n          "mustRevalidate" : false,\n          "defaultTtl" : "0m",\n          "honorPrivateEnabled" : true,\n          "honorMustrevalidateEnabled" : false\n        }\n      }, {\n        "name" : "downstreamCache",\n        "options" : {\n          "behavior" : "TUNNEL_ORIGIN"\n        }\n      } ],\n      "criteria" : [ ],\n      "criteriaMustSatisfy" : "all"\n    }, {\n      "name" : "Accelerating delivery",\n      "children" : [ {\n        "name" : "Enable HTTP2",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "http2",\n          "options" : {\n            "enabled" : ""\n          }\n        } ],\n        "criteria" : [ {\n          "name" : "bucket",\n          "options" : {\n            "percentage" : 100\n          }\n        } ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "DNS Async Refresh",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "dnsAsyncRefresh",\n          "options" : {\n            "enabled" : true,\n            "timeout" : "2h"\n          }\n        } ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "Chunked Transfer Encoding",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "allowTransferEncoding",\n          "options" : {\n            "enabled" : true\n          }\n        } ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "Tiered distribution",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "tieredDistribution",\n          "options" : {\n            "enabled" : true\n          }\n        } ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all"\n      } ],\n      "behaviors" : [ ],\n      "criteria" : [ ],\n      "criteriaMustSatisfy" : "all"\n    }, {\n      "name" : "Increasing Security",\n      "children" : [ {\n        "name" : "Allowed HTTP Methods",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "allowPost",\n          "options" : {\n            "enabled" : true,\n            "allowWithoutContentLength" : false\n          }\n        }, {\n          "name" : "allowDelete",\n          "options" : {\n            "enabled" : true,\n            "allowBody" : false\n          }\n        }, {\n          "name" : "allowPut",\n          "options" : {\n            "enabled" : true\n          }\n        } ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all"\n      }, {\n        "name" : "HTTP headers",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "modifyOutgoingResponseHeader",\n          "options" : {\n            "action" : "DELETE",\n            "standardDeleteHeaderName" : "OTHER",\n            "customHeaderName" : "Server"\n          }\n        }, {\n          "name" : "modifyOutgoingResponseHeader",\n          "options" : {\n            "action" : "DELETE",\n            "standardDeleteHeaderName" : "OTHER",\n            "customHeaderName" : "X-Powered-By"\n          }\n        }, {\n          "name" : "modifyOutgoingResponseHeader",\n          "options" : {\n            "action" : "DELETE",\n            "standardDeleteHeaderName" : "OTHER",\n            "customHeaderName" : "Forwarded"\n          }\n        } ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all"\n      } ],\n      "behaviors" : [ ],\n      "criteria" : [ ],\n      "criteriaMustSatisfy" : "all"\n    }, {\n      "name" : "Minimizing Payload",\n      "children" : [ {\n        "name" : "Content Compression",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "gzipResponse",\n          "options" : {\n            "behavior" : "ALWAYS"\n          }\n        } ],\n        "criteria" : [ {\n          "name" : "contentType",\n          "options" : {\n            "matchCaseSensitive" : false,\n            "matchOperator" : "IS_ONE_OF",\n            "matchWildcard" : true,\n            "values" : [ "text/*", "application/javascript", "application/x-javascript", "application/x-javascript*", "application/json", "application/x-json", "application/*+json", "application/*+xml", "application/text", "application/vnd.microsoft.icon", "application/vnd-ms-fontobject", "application/x-font-ttf", "application/x-font-opentype", "application/x-font-truetype", "application/xmlfont/eot", "application/xml", "font/opentype", "font/otf", "font/eot", "image/svg+xml", "image/vnd.microsoft.icon" ]\n          }\n        } ],\n        "criteriaMustSatisfy" : "all"\n      } ],\n      "behaviors" : [ ],\n      "criteria" : [ ],\n      "criteriaMustSatisfy" : "all"\n    }, {\n      "name" : "Adding Logic",\n      "children" : [ {\n        "name" : "Remove Vary Header",\n        "children" : [ ],\n        "behaviors" : [ {\n          "name" : "removeVary",\n          "options" : {\n            "enabled" : true\n          }\n        } ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all",\n        "comments" : "Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate."\n      }, {\n        "name" : "Enforce https",\n        "children" : [ {\n          "name" : "Redirect to HTTPS",\n          "children" : [ ],\n          "behaviors" : [ {\n            "name" : "redirect",\n            "options" : {\n              "queryString" : "APPEND",\n              "responseCode" : 301,\n              "destinationHostname" : "SAME_AS_REQUEST",\n              "destinationPath" : "SAME_AS_REQUEST",\n              "destinationProtocol" : "HTTPS",\n              "mobileDefaultChoice" : "DEFAULT"\n            }\n          } ],\n          "criteria" : [ {\n            "name" : "requestProtocol",\n            "options" : {\n              "value" : "HTTP"\n            }\n          } ],\n          "criteriaMustSatisfy" : "all",\n          "comments" : "Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently). You may change the response code to 302 if needed."\n        } ],\n        "behaviors" : [ ],\n        "criteria" : [ ],\n        "criteriaMustSatisfy" : "all"\n      } ],\n      "behaviors" : [ ],\n      "criteria" : [ ],\n      "criteriaMustSatisfy" : "all"\n    } ],\n    "behaviors" : [ {\n      "name" : "origin",\n      "options" : {\n        "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n        "compress" : true,\n        "enableTrueClientIp" : true,\n        "forwardHostHeader" : "REQUEST_HOST_HEADER",\n        "httpPort" : 80,\n        "originType" : "CUSTOMER",\n        "hostname" : "origin-nonprod.pipeline_papitest",\n        "originCertificate" : "",\n        "verificationMode" : "PLATFORM_SETTINGS",\n        "ports" : "",\n        "httpsPort" : 443,\n        "originSni" : true,\n        "trueClientIpHeader" : "True-Client-IP",\n        "trueClientIpClientSetting" : false\n      }\n    }, {\n      "name" : "cpCode",\n      "options" : {\n        "value" : {\n          "id" : 724490\n        }\n      }\n    } ],\n    "options" : {\n      "is_secure" : true\n    },\n    "variables" : [ ]\n  },\n  "errors" : [ {\n    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_or_ip",\n    "errorLocation" : "#/rules/behaviors/0/options/hostname",\n    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."\n  }, {\n    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_or_ip",\n    "errorLocation" : "#/rules/children/0/children/0/behaviors/0/options/hostname",\n    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."\n  }, {\n    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_or_ip",\n    "errorLocation" : "#/rules/children/0/children/1/behaviors/0/options/hostname",\n    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."\n  } ],\n  "warnings" : [ {\n    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.http2_hostname_conflict_message",\n    "errorLocation" : "#/rules/children/3/children/0/behaviors/0",\n    "detail" : "Warning: If your HTTP/2 rule contains no hostname match criteria, a parent or higher sibling ruleâs hostname match criteria apply to this rule. Best practice is to do one of the following:<br /> 1. Add a hostname match to the HTTP/2 rule. <br /> 2. Move the HTTP/2 behavior to the default rule to apply to all property hostnames."\n  } ],\n  "ruleFormat" : "v2018-09-12"\n}' }
+[2018-12-16T21:49:09.983] [INFO] devops-prov.openclient - Status code:  200
+[2018-12-16T21:49:09.983] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-2438013",
+  "contractId" : "ctr_P-2D0UA15",
+  "groupId" : "grp_119284",
+  "propertyId" : "prp_504463",
+  "propertyName" : "nonprod.pipeline_papitest",
+  "propertyVersion" : 1,
+  "etag" : "4268e1bbf47f2a8340a599b09cdca6a631f9fa32",
+  "rules" : {
+    "name" : "default",
+    "children" : [ {
+      "name" : "Origin servers",
+      "children" : [ {
+        "name" : "DEV",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "origin",
+          "options" : {
+            "originType" : "CUSTOMER",
+            "hostname" : "origin-nonprod.pipeline_papitest",
+            "forwardHostHeader" : "REQUEST_HOST_HEADER",
+            "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+            "compress" : true,
+            "enableTrueClientIp" : true,
+            "originCertificate" : "",
+            "verificationMode" : "PLATFORM_SETTINGS",
+            "ports" : "",
+            "httpPort" : 80,
+            "httpsPort" : 443,
+            "originSni" : true,
+            "trueClientIpHeader" : "True-Client-IP",
+            "trueClientIpClientSetting" : false
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "hostname",
+          "options" : {
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "vls.dev-vlaanderen.be" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "UAT",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "origin",
+          "options" : {
+            "originType" : "CUSTOMER",
+            "hostname" : "origin-nonprod.pipeline_papitest",
+            "forwardHostHeader" : "REQUEST_HOST_HEADER",
+            "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+            "compress" : true,
+            "enableTrueClientIp" : true,
+            "originCertificate" : "",
+            "verificationMode" : "PLATFORM_SETTINGS",
+            "ports" : "",
+            "httpPort" : 80,
+            "httpsPort" : 443,
+            "originSni" : false,
+            "trueClientIpHeader" : "True-Client-IP",
+            "trueClientIpClientSetting" : false
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "hostname",
+          "options" : {
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "vls.uat-vlaanderen.be" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all"
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all"
+    }, {
+      "name" : "Increasing insights",
+      "children" : [ {
+        "name" : "CP Codes",
+        "children" : [ {
+          "name" : "DEV",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "cpCode",
+            "options" : {
+              "value" : {
+                "id" : 724490
+              }
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "hostname",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "values" : [ "overheid.dev-vlaanderen.be" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all"
+        }, {
+          "name" : "UAT",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "cpCode",
+            "options" : {
+              "value" : {
+                "id" : 724490
+              }
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "hostname",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "values" : [ "overheid.uat-vlaanderen.be" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all"
+        } ],
+        "behaviors" : [ ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "Log Delivery",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "report",
+          "options" : {
+            "logHost" : true,
+            "logReferer" : true,
+            "logUserAgent" : true,
+            "logAcceptLanguage" : true,
+            "logCookies" : "OFF",
+            "logCustomLogField" : false
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "Real User Monitoring",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "realUserMonitoring",
+          "options" : {
+            "enabled" : false
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all"
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all"
+    }, {
+      "name" : "Offloading origin",
+      "children" : [ {
+        "name" : "Static Content",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "1d"
+          }
+        }, {
+          "name" : "prefetch",
+          "options" : {
+            "enabled" : true
+          }
+        }, {
+          "name" : "prefetchable",
+          "options" : {
+            "enabled" : true
+          }
+        }, {
+          "name" : "prefreshCache",
+          "options" : {
+            "enabled" : true,
+            "prefreshval" : 95
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "aif", "aiff", "au", "avi", "bin", "bmp", "cab", "carb", "cct", "cdf", "class", "css", "doc", "dcr", "dtd", "exe", "flv", "gcf", "gff", "gif", "grv", "hdml", "hqx", "ico", "ini", "jpeg", "jpg", "js", "mov", "mp3", "nc", "pct", "pdf", "png", "ppc", "pws", "swa", "swf", "txt", "vbs", "w32", "wav", "wbmp", "wml", "wmlc", "wmls", "wmlsc", "xsd", "zip", "pict", "tif", "tiff", "mid", "midi", "ttf", "eot", "woff", "woff2", "otf", "svg", "svgz", "webp", "jxr", "jar", "jp2" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "Dynamic Content",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "downstreamCache",
+          "options" : {
+            "behavior" : "TUNNEL_ORIGIN"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "cacheability",
+          "options" : {
+            "matchOperator" : "IS_NOT",
+            "value" : "CACHEABLE"
+          }
+        } ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "Cookie bypass cache",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "BYPASS_CACHE"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "requestCookie",
+          "options" : {
+            "cookieName" : "xxxx",
+            "matchOperator" : "EXISTS",
+            "matchWildcardName" : false,
+            "matchCaseSensitiveName" : true
+          }
+        } ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "Admin bypass cache",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "BYPASS_CACHE"
+          }
+        }, {
+          "name" : "downstreamCache",
+          "options" : {
+            "behavior" : "BUST"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "hostname",
+          "options" : {
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "/admin*", "/admin/*" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all"
+      } ],
+      "behaviors" : [ {
+        "name" : "caching",
+        "options" : {
+          "behavior" : "CACHE_CONTROL_AND_EXPIRES",
+          "mustRevalidate" : false,
+          "defaultTtl" : "0m",
+          "honorPrivateEnabled" : true,
+          "honorMustrevalidateEnabled" : false
+        }
+      }, {
+        "name" : "downstreamCache",
+        "options" : {
+          "behavior" : "TUNNEL_ORIGIN"
+        }
+      } ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all"
+    }, {
+      "name" : "Accelerating delivery",
+      "children" : [ {
+        "name" : "Enable HTTP2",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "http2",
+          "options" : {
+            "enabled" : ""
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "bucket",
+          "options" : {
+            "percentage" : 100
+          }
+        } ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "DNS Async Refresh",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "dnsAsyncRefresh",
+          "options" : {
+            "enabled" : true,
+            "timeout" : "2h"
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "Chunked Transfer Encoding",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "allowTransferEncoding",
+          "options" : {
+            "enabled" : true
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "Tiered distribution",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "tieredDistribution",
+          "options" : {
+            "enabled" : true
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all"
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all"
+    }, {
+      "name" : "Increasing Security",
+      "children" : [ {
+        "name" : "Allowed HTTP Methods",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "allowPost",
+          "options" : {
+            "enabled" : true,
+            "allowWithoutContentLength" : false
+          }
+        }, {
+          "name" : "allowDelete",
+          "options" : {
+            "enabled" : true,
+            "allowBody" : false
+          }
+        }, {
+          "name" : "allowPut",
+          "options" : {
+            "enabled" : true
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all"
+      }, {
+        "name" : "HTTP headers",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "modifyOutgoingResponseHeader",
+          "options" : {
+            "action" : "DELETE",
+            "standardDeleteHeaderName" : "OTHER",
+            "customHeaderName" : "Server"
+          }
+        }, {
+          "name" : "modifyOutgoingResponseHeader",
+          "options" : {
+            "action" : "DELETE",
+            "standardDeleteHeaderName" : "OTHER",
+            "customHeaderName" : "X-Powered-By"
+          }
+        }, {
+          "name" : "modifyOutgoingResponseHeader",
+          "options" : {
+            "action" : "DELETE",
+            "standardDeleteHeaderName" : "OTHER",
+            "customHeaderName" : "Forwarded"
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all"
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all"
+    }, {
+      "name" : "Minimizing Payload",
+      "children" : [ {
+        "name" : "Content Compression",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "gzipResponse",
+          "options" : {
+            "behavior" : "ALWAYS"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "contentType",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "matchWildcard" : true,
+            "values" : [ "text/*", "application/javascript", "application/x-javascript", "application/x-javascript*", "application/json", "application/x-json", "application/*+json", "application/*+xml", "application/text", "application/vnd.microsoft.icon", "application/vnd-ms-fontobject", "application/x-font-ttf", "application/x-font-opentype", "application/x-font-truetype", "application/xmlfont/eot", "application/xml", "font/opentype", "font/otf", "font/eot", "image/svg+xml", "image/vnd.microsoft.icon" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all"
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all"
+    }, {
+      "name" : "Adding Logic",
+      "children" : [ {
+        "name" : "Remove Vary Header",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "removeVary",
+          "options" : {
+            "enabled" : true
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate."
+      }, {
+        "name" : "Enforce https",
+        "children" : [ {
+          "name" : "Redirect to HTTPS",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "redirect",
+            "options" : {
+              "queryString" : "APPEND",
+              "responseCode" : 301,
+              "destinationHostname" : "SAME_AS_REQUEST",
+              "destinationPath" : "SAME_AS_REQUEST",
+              "destinationProtocol" : "HTTPS",
+              "mobileDefaultChoice" : "DEFAULT"
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "requestProtocol",
+            "options" : {
+              "value" : "HTTP"
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : "Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently). You may change the response code to 302 if needed."
+        } ],
+        "behaviors" : [ ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all"
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all"
+    } ],
+    "behaviors" : [ {
+      "name" : "origin",
+      "options" : {
+        "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+        "compress" : true,
+        "enableTrueClientIp" : true,
+        "forwardHostHeader" : "REQUEST_HOST_HEADER",
+        "httpPort" : 80,
+        "originType" : "CUSTOMER",
+        "hostname" : "origin-nonprod.pipeline_papitest",
+        "originCertificate" : "",
+        "verificationMode" : "PLATFORM_SETTINGS",
+        "ports" : "",
+        "httpsPort" : 443,
+        "originSni" : true,
+        "trueClientIpHeader" : "True-Client-IP",
+        "trueClientIpClientSetting" : false
+      }
+    }, {
+      "name" : "cpCode",
+      "options" : {
+        "value" : {
+          "id" : 724490
+        }
+      }
+    } ],
+    "options" : {
+      "is_secure" : true
+    },
+    "variables" : [ ]
+  },
+  "errors" : [ {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_or_ip",
+    "errorLocation" : "#/rules/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_or_ip",
+    "errorLocation" : "#/rules/children/0/children/0/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_or_ip",
+    "errorLocation" : "#/rules/children/0/children/1/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  } ],
+  "warnings" : [ {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.http2_hostname_conflict_message",
+    "errorLocation" : "#/rules/children/3/children/0/behaviors/0",
+    "detail" : "Warning: If your HTTP/2 rule contains no hostname match criteria, a parent or higher sibling ruleâs hostname match criteria apply to this rule. Best practice is to do one of the following:<br /> 1. Add a hostname match to the HTTP/2 rule. <br /> 2. Move the HTTP/2 behavior to the default rule to apply to all property hostnames."
+  } ],
+  "ruleFormat" : "v2018-09-12"
+}
+[2018-12-16T21:49:09.984] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/variables.json'
+[2018-12-16T21:49:09.985] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/variableDefinitions.json'
+[2018-12-16T21:49:09.985] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/main.json'
+[2018-12-16T21:49:09.985] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Accelerating_delivery.json'
+[2018-12-16T21:49:09.986] [INFO] devops-prov.el - parsing: http2
+[2018-12-16T21:49:09.986] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:49:09.986] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/variables.json'
+[2018-12-16T21:49:09.986] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/variableDefinitions.json'
+[2018-12-16T21:49:09.986] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/main.json'
+[2018-12-16T21:49:09.986] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/variables.json'
+[2018-12-16T21:49:09.986] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/variableDefinitions.json'
+[2018-12-16T21:49:09.987] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/main.json'
+[2018-12-16T21:49:09.987] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Origin_servers.json'
+[2018-12-16T21:49:09.987] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/variables.json'
+[2018-12-16T21:49:09.987] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/variableDefinitions.json'
+[2018-12-16T21:49:09.987] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/main.json'
+[2018-12-16T21:49:09.987] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Origin_servers.json'
+[2018-12-16T21:49:09.988] [INFO] devops-prov.utils - writing '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/envInfo.json'
+[2018-12-16T21:49:09.988] [INFO] devops-prov.utils - writing '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/envInfo.json'
+[2018-12-16T21:51:34.677] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/devopsSettings.json'
+[2018-12-16T21:51:34.680] [INFO] devops-prov.factory - Using credentials file: '/Users/lucdouwen/.edgerc', section: 'papi'
+[2018-12-16T21:51:34.681] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/projectInfo.json'
+[2018-12-16T21:51:34.681] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/projectInfo.json'
+[2018-12-16T21:51:34.681] [INFO] devops-prov.project - Overriding edgegrid config with project default:  { section: 'papi' }
+[2018-12-16T21:51:34.683] [INFO] devops-prov.envionment - Merge environment: 'nonprod' in pipeline: 'pipeline_papitest'
+[2018-12-16T21:51:34.684] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/variables.json'
+[2018-12-16T21:51:34.684] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/variableDefinitions.json'
+[2018-12-16T21:51:34.684] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/main.json'
+[2018-12-16T21:51:34.685] [INFO] devops-prov.el - parsing: default
+[2018-12-16T21:51:34.686] [INFO] devops-prov.el - parsing: #include:Origin_servers.json
+[2018-12-16T21:51:34.686] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Origin_servers.json'
+[2018-12-16T21:51:34.686] [INFO] devops-prov.el - parsing: Origin servers
+[2018-12-16T21:51:34.686] [INFO] devops-prov.el - parsing: DEV
+[2018-12-16T21:51:34.686] [INFO] devops-prov.el - parsing: origin
+[2018-12-16T21:51:34.686] [INFO] devops-prov.el - parsing: CUSTOMER
+[2018-12-16T21:51:34.687] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2018-12-16T21:51:34.687] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-nonprod.pipeline_papitest'
+[2018-12-16T21:51:34.687] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:51:34.687] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:51:34.687] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:51:34.687] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2018-12-16T21:51:34.687] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:51:34.687] [INFO] devops-prov.el - parsing: True-Client-IP
+[2018-12-16T21:51:34.687] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: vls.dev-vlaanderen.be
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: UAT
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: origin
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: CUSTOMER
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-nonprod.pipeline_papitest'
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: True-Client-IP
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: vls.uat-vlaanderen.be
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.688] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - parsing: #include:Increasing_insights.json
+[2018-12-16T21:51:34.689] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Increasing_insights.json'
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - parsing: Increasing insights
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - parsing: CP Codes
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - parsing: DEV
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - parsing: cpCode
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - parsing: ${env.cpCode}
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - Replacing '${env.cpCode}' with: '724490'
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:51:34.689] [INFO] devops-prov.el - parsing: overheid.dev-vlaanderen.be
+[2018-12-16T21:51:34.690] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.690] [INFO] devops-prov.el - parsing: UAT
+[2018-12-16T21:51:34.690] [INFO] devops-prov.el - parsing: cpCode
+[2018-12-16T21:51:34.690] [INFO] devops-prov.el - parsing: ${env.cpCode}
+[2018-12-16T21:51:34.690] [INFO] devops-prov.el - Replacing '${env.cpCode}' with: '724490'
+[2018-12-16T21:51:34.690] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:51:34.690] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:51:34.690] [INFO] devops-prov.el - parsing: overheid.uat-vlaanderen.be
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: Log Delivery
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: report
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: OFF
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: Real User Monitoring
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: realUserMonitoring
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.691] [INFO] devops-prov.el - parsing: #include:Offloading_origin.json
+[2018-12-16T21:51:34.691] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Offloading_origin.json'
+[2018-12-16T21:51:34.692] [INFO] devops-prov.el - parsing: Offloading origin
+[2018-12-16T21:51:34.692] [INFO] devops-prov.el - parsing: Static Content
+[2018-12-16T21:51:34.692] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:51:34.692] [INFO] devops-prov.el - parsing: MAX_AGE
+[2018-12-16T21:51:34.692] [INFO] devops-prov.el - parsing: 1d
+[2018-12-16T21:51:34.692] [INFO] devops-prov.el - parsing: prefetch
+[2018-12-16T21:51:34.692] [INFO] devops-prov.el - parsing: prefetchable
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: prefreshCache
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: fileExtension
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: aif
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: aiff
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: au
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: avi
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: bin
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: bmp
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: cab
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: carb
+[2018-12-16T21:51:34.693] [INFO] devops-prov.el - parsing: cct
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: cdf
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: class
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: css
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: doc
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: dcr
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: dtd
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: exe
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: flv
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: gcf
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: gff
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: gif
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: grv
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: hdml
+[2018-12-16T21:51:34.694] [INFO] devops-prov.el - parsing: hqx
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: ico
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: ini
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: jpeg
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: jpg
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: js
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: mov
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: mp3
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: nc
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: pct
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: pdf
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: png
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: ppc
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: pws
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: swa
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: swf
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: txt
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: vbs
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: w32
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: wav
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: wbmp
+[2018-12-16T21:51:34.695] [INFO] devops-prov.el - parsing: wml
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: wmlc
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: wmls
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: wmlsc
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: xsd
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: zip
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: pict
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: tif
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: tiff
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: mid
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: midi
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: ttf
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: eot
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: woff
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: woff2
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: otf
+[2018-12-16T21:51:34.696] [INFO] devops-prov.el - parsing: svg
+[2018-12-16T21:51:34.698] [INFO] devops-prov.el - parsing: svgz
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: webp
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: jxr
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: jar
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: jp2
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: Dynamic Content
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: downstreamCache
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: TUNNEL_ORIGIN
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: cacheability
+[2018-12-16T21:51:34.699] [INFO] devops-prov.el - parsing: IS_NOT
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: CACHEABLE
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: Cookie bypass cache
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: BYPASS_CACHE
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: requestCookie
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: xxxx
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: EXISTS
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: Admin bypass cache
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: BYPASS_CACHE
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: downstreamCache
+[2018-12-16T21:51:34.700] [INFO] devops-prov.el - parsing: BUST
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: /admin*
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: /admin/*
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: CACHE_CONTROL_AND_EXPIRES
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: 0m
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: downstreamCache
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: TUNNEL_ORIGIN
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: #include:Accelerating_delivery.json
+[2018-12-16T21:51:34.701] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Accelerating_delivery.json'
+[2018-12-16T21:51:34.701] [INFO] devops-prov.el - parsing: Accelerating delivery
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: Enable HTTP2
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: http2
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: bucket
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: DNS Async Refresh
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: dnsAsyncRefresh
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: 2h
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: Chunked Transfer Encoding
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: allowTransferEncoding
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: Tiered distribution
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: tieredDistribution
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.702] [INFO] devops-prov.el - parsing: #include:Increasing_Security.json
+[2018-12-16T21:51:34.703] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Increasing_Security.json'
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: Increasing Security
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: Allowed HTTP Methods
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: allowPost
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: allowDelete
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: allowPut
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: HTTP headers
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: DELETE
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: OTHER
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: Server
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2018-12-16T21:51:34.703] [INFO] devops-prov.el - parsing: DELETE
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: OTHER
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: X-Powered-By
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: DELETE
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: OTHER
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: Forwarded
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: #include:Minimizing_Payload.json
+[2018-12-16T21:51:34.704] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Minimizing_Payload.json'
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: Minimizing Payload
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: Content Compression
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: gzipResponse
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: ALWAYS
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: contentType
+[2018-12-16T21:51:34.704] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: text/*
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/javascript
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/x-javascript
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/x-javascript*
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/json
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/x-json
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/*+json
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/*+xml
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/text
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/vnd.microsoft.icon
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/vnd-ms-fontobject
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/x-font-ttf
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/x-font-opentype
+[2018-12-16T21:51:34.705] [INFO] devops-prov.el - parsing: application/x-font-truetype
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: application/xmlfont/eot
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: application/xml
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: font/opentype
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: font/otf
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: font/eot
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: image/svg+xml
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: image/vnd.microsoft.icon
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: #include:Adding_Logic.json
+[2018-12-16T21:51:34.706] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Adding_Logic.json'
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: Adding Logic
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: Remove Vary Header
+[2018-12-16T21:51:34.706] [INFO] devops-prov.el - parsing: removeVary
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate.
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: Enforce https
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: Redirect to HTTPS
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: redirect
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: APPEND
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: SAME_AS_REQUEST
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: SAME_AS_REQUEST
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: HTTPS
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: DEFAULT
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: requestProtocol
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: HTTP
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently). You may change the response code to 302 if needed.
+[2018-12-16T21:51:34.707] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: origin
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: CUSTOMER
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-nonprod.pipeline_papitest'
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: True-Client-IP
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: cpCode
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - parsing: ${env.cpCode}
+[2018-12-16T21:51:34.708] [INFO] devops-prov.el - Replacing '${env.cpCode}' with: '724490'
+[2018-12-16T21:51:34.709] [INFO] devops-prov.utils - writing '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/dist/nonprod.pipeline_papitest.papi.json'
+[2018-12-16T21:51:34.710] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/envInfo.json'
+[2018-12-16T21:54:02.253] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/devopsSettings.json'
+[2018-12-16T21:54:02.256] [INFO] devops-prov.factory - Using credentials file: '/Users/lucdouwen/.edgerc', section: 'papi'
+[2018-12-16T21:54:02.256] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/projectInfo.json'
+[2018-12-16T21:54:02.257] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/projectInfo.json'
+[2018-12-16T21:54:02.257] [INFO] devops-prov.project - Overriding edgegrid config with project default:  { section: 'papi' }
+[2018-12-16T21:54:02.259] [INFO] devops-prov.envionment - Merge environment: 'nonprod' in pipeline: 'pipeline_papitest'
+[2018-12-16T21:54:02.259] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/variables.json'
+[2018-12-16T21:54:02.259] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/variableDefinitions.json'
+[2018-12-16T21:54:02.260] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/main.json'
+[2018-12-16T21:54:02.260] [INFO] devops-prov.el - parsing: default
+[2018-12-16T21:54:02.261] [INFO] devops-prov.el - parsing: #include:Origin_servers.json
+[2018-12-16T21:54:02.261] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Origin_servers.json'
+[2018-12-16T21:54:02.261] [INFO] devops-prov.el - parsing: Origin servers
+[2018-12-16T21:54:02.262] [INFO] devops-prov.el - parsing: DEV
+[2018-12-16T21:54:02.262] [INFO] devops-prov.el - parsing: origin
+[2018-12-16T21:54:02.262] [INFO] devops-prov.el - parsing: CUSTOMER
+[2018-12-16T21:54:02.262] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2018-12-16T21:54:02.262] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-nonprod.pipeline_papitest'
+[2018-12-16T21:54:02.262] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: True-Client-IP
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: vls.dev-vlaanderen.be
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: UAT
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: origin
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: CUSTOMER
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-nonprod.pipeline_papitest'
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:54:02.263] [INFO] devops-prov.el - parsing: True-Client-IP
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: vls.uat-vlaanderen.be
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: #include:Increasing_insights.json
+[2018-12-16T21:54:02.264] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Increasing_insights.json'
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: Increasing insights
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: CP Codes
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: DEV
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: cpCode
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: ${env.cpCode}
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - Replacing '${env.cpCode}' with: '724490'
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:54:02.264] [INFO] devops-prov.el - parsing: overheid.dev-vlaanderen.be
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: UAT
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: cpCode
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: ${env.cpCode}
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - Replacing '${env.cpCode}' with: '724490'
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: overheid.uat-vlaanderen.be
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: Log Delivery
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: report
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: OFF
+[2018-12-16T21:54:02.265] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: Real User Monitoring
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: realUserMonitoring
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: #include:Offloading_origin.json
+[2018-12-16T21:54:02.266] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Offloading_origin.json'
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: Offloading origin
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: Static Content
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: MAX_AGE
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: 1d
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: prefetch
+[2018-12-16T21:54:02.266] [INFO] devops-prov.el - parsing: prefetchable
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: prefreshCache
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: fileExtension
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: aif
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: aiff
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: au
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: avi
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: bin
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: bmp
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: cab
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: carb
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: cct
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: cdf
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: class
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: css
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: doc
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: dcr
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: dtd
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: exe
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: flv
+[2018-12-16T21:54:02.267] [INFO] devops-prov.el - parsing: gcf
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: gff
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: gif
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: grv
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: hdml
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: hqx
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: ico
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: ini
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: jpeg
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: jpg
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: js
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: mov
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: mp3
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: nc
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: pct
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: pdf
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: png
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: ppc
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: pws
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: swa
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: swf
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: txt
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: vbs
+[2018-12-16T21:54:02.268] [INFO] devops-prov.el - parsing: w32
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: wav
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: wbmp
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: wml
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: wmlc
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: wmls
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: wmlsc
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: xsd
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: zip
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: pict
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: tif
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: tiff
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: mid
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: midi
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: ttf
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: eot
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: woff
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: woff2
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: otf
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: svg
+[2018-12-16T21:54:02.269] [INFO] devops-prov.el - parsing: svgz
+[2018-12-16T21:54:02.271] [INFO] devops-prov.el - parsing: webp
+[2018-12-16T21:54:02.271] [INFO] devops-prov.el - parsing: jxr
+[2018-12-16T21:54:02.271] [INFO] devops-prov.el - parsing: jar
+[2018-12-16T21:54:02.271] [INFO] devops-prov.el - parsing: jp2
+[2018-12-16T21:54:02.272] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.272] [INFO] devops-prov.el - parsing: Dynamic Content
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: downstreamCache
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: TUNNEL_ORIGIN
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: cacheability
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: IS_NOT
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: CACHEABLE
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: Cookie bypass cache
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: BYPASS_CACHE
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: requestCookie
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: xxxx
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: EXISTS
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: Admin bypass cache
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: BYPASS_CACHE
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: downstreamCache
+[2018-12-16T21:54:02.273] [INFO] devops-prov.el - parsing: BUST
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: hostname
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: /admin*
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: /admin/*
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: caching
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: CACHE_CONTROL_AND_EXPIRES
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: 0m
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: downstreamCache
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: TUNNEL_ORIGIN
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: #include:Accelerating_delivery.json
+[2018-12-16T21:54:02.274] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Accelerating_delivery.json'
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: Accelerating delivery
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: Enable HTTP2
+[2018-12-16T21:54:02.274] [INFO] devops-prov.el - parsing: http2
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: bucket
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: DNS Async Refresh
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: dnsAsyncRefresh
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: 2h
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: Chunked Transfer Encoding
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: allowTransferEncoding
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: Tiered distribution
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: tieredDistribution
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.275] [INFO] devops-prov.el - parsing: #include:Increasing_Security.json
+[2018-12-16T21:54:02.275] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Increasing_Security.json'
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: Increasing Security
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: Allowed HTTP Methods
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: allowPost
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: allowDelete
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: allowPut
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: HTTP headers
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: DELETE
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: OTHER
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: Server
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: DELETE
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: OTHER
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: X-Powered-By
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: modifyOutgoingResponseHeader
+[2018-12-16T21:54:02.276] [INFO] devops-prov.el - parsing: DELETE
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: OTHER
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: Forwarded
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: #include:Minimizing_Payload.json
+[2018-12-16T21:54:02.277] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Minimizing_Payload.json'
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: Minimizing Payload
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: Content Compression
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: gzipResponse
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: ALWAYS
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: contentType
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: IS_ONE_OF
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: text/*
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: application/javascript
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: application/x-javascript
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: application/x-javascript*
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: application/json
+[2018-12-16T21:54:02.277] [INFO] devops-prov.el - parsing: application/x-json
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/*+json
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/*+xml
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/text
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/vnd.microsoft.icon
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/vnd-ms-fontobject
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/x-font-ttf
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/x-font-opentype
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/x-font-truetype
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/xmlfont/eot
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: application/xml
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: font/opentype
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: font/otf
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: font/eot
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: image/svg+xml
+[2018-12-16T21:54:02.278] [INFO] devops-prov.el - parsing: image/vnd.microsoft.icon
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: #include:Adding_Logic.json
+[2018-12-16T21:54:02.279] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/templates/Adding_Logic.json'
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: Adding Logic
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: Remove Vary Header
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: removeVary
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate.
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: Enforce https
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: Redirect to HTTPS
+[2018-12-16T21:54:02.279] [INFO] devops-prov.el - parsing: redirect
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: APPEND
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: SAME_AS_REQUEST
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: SAME_AS_REQUEST
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: HTTPS
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: DEFAULT
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: requestProtocol
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: HTTP
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently). You may change the response code to 302 if needed.
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: all
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: origin
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: REQUEST_HOST_HEADER
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: CUSTOMER
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: ${env.originHostname}
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - Replacing '${env.originHostname}' with: 'origin-nonprod.pipeline_papitest'
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:54:02.280] [INFO] devops-prov.el - parsing: PLATFORM_SETTINGS
+[2018-12-16T21:54:02.281] [INFO] devops-prov.el - parsing: 
+[2018-12-16T21:54:02.281] [INFO] devops-prov.el - parsing: True-Client-IP
+[2018-12-16T21:54:02.281] [INFO] devops-prov.el - parsing: cpCode
+[2018-12-16T21:54:02.281] [INFO] devops-prov.el - parsing: ${env.cpCode}
+[2018-12-16T21:54:02.281] [INFO] devops-prov.el - Replacing '${env.cpCode}' with: '724490'
+[2018-12-16T21:54:02.282] [INFO] devops-prov.utils - writing '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/dist/nonprod.pipeline_papitest.papi.json'
+[2018-12-16T21:54:02.283] [INFO] devops-prov.utils - loading '/Users/lucdouwen/projects/aiv/akamai-config/pipeline_papitest/environments/nonprod/envInfo.json'

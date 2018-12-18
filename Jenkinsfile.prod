@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Run Akamai-cli container') {
             steps {
-                sh("/usr/local/bin/docker run -v /Users/lucdouwen/edgercaiv:/root/.edgerc -t --rm ${img_group_name}/${img_name}:${img_tag} pipeline promote prod --pipeline pipeline_papitest --network staging --emails luc.douwen@icloud.com")
+                sh("/usr/local/bin/docker run -v /Users/lucdouwen/edgercaiv:/root/.edgerc -t --rm ${img_group_name}/${img_name}:${img_tag} pipeline promote prod--force  --pipeline pipeline_papitest --network staging --emails luc.douwen@icloud.com")
             }
         }
     }

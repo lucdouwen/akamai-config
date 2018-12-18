@@ -1,7 +1,7 @@
 [
     {
         "cnameFrom": "prod.pipeline_papitest.be",
-        "cnameTo": "prod.pipeline_papitest.edgekey.net",
+        "cnameTo": "mvgp.edgekey.net",
         "cnameType": "EDGE_HOSTNAME",
         "edgeHostnameId": null
     }

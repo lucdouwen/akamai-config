@@ -1,0 +1,29 @@
+def img_tag_ori = '$BUILD_NUMBER'
+def img_tag = 'latest'
+def img_name = 'akamai-cli-pipeline'
+def nexus = 'nexus.ravago.com:5000'
+def img_group_name= 'lucdouwen'
+
+pipeline {
+    agent any
+    environment {
+    	PATH = "/usr/local/bin:$PATH"
+    }
+    stages {
+       stage('Initialize pipeline') {
+            steps {
+                sh "echo hallo"
+            }
+        }
+        stage('Build Akamai-cli container') {
+            steps {
+                sh("/usr/local/bin/docker build -t ${img_group_name}/${img_name}:${img_tag} .")
+            }
+        }
+        stage('Run Akamai-cli container') {
+            steps {
+                sh("/usr/local/bin/docker run -v /Users/lucdouwen/edgercaiv:/root/.edgerc -t --rm ${img_group_name}/${img_name}:${img_tag} pipeline promote prod --pipeline pipeline_papitest --network staging --emails luc.douwen@icloud.com")
+            }
+        }
+    }
+}
